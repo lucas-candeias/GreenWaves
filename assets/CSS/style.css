@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+
+}
+
+body {
+    background-color: #ffffff;
+    height: 100vh;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#imgLogo{
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+
+  #colorLogo{
+    color: #00a816;
+  }
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00a816;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #5e5e5e6c;
+    transform: scale(1.05);
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a:hover {
+    color: #848478;
+    transform: scale(1.10);
+}
+
+header a {
+    color: #5e5e5e;
+    text-decoration: none;
+    display: inline-block;
+    transition: 1.5s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+    background-image: url("../IMG/imgTopoSite.png");
+    background-size: cover;
+    background-position: center; /* Opcional: centraliza a imagem */
+    background-repeat: no-repeat; /* Opcional: impede repetição da imagem */
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site {
+    display: flex;          /* Ativa o Flexbox */
+    align-items: center;    /* Alinha verticalmente ao centro (opcional) */
+    gap: 20px;              /* Adiciona espaço entre o h1 e o botão */ 
+}
+
+#btn-topo {
+    margin: 0;             /* Remove margens desnecessárias */
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00c721;
+
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+/* ESTILO DO MEIO DO SITE */
+
+.meioSite {
+    display: flex;
+    align-items: center;
+    background-image: url("../IMG/imgMeioSite.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    position: relative;
+    padding: 30px 0; /* Aumenta o padding para criar espaço */
+}
+
+.meioSite::before { /* Overlay semi-transparente */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+}
+
+.meio-content {
+    position: relative; /* Para posicionar sobre o overlay */
+    z-index: 1; /* Garante que o conteúdo fique acima do overlay */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; /* Ativa o Flexbox para o conteúdo */
+    justify-content: space-between; /* Distribui o espaço entre as imagens e o texto */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 40%; /* Define a largura do container de imagens */
+}
+
+.image-container img {
+    flex: 1 0 100%; /* Faz a primeira imagem ocupar 100% da largura na primeira linha */
+    height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+}
+
+.image-container img:nth-child(n+2) { /* Aplica estilo às imagens a partir da segunda */
+    flex: 1 0 calc(50% - 10px); /* 50% da largura menos metade do gap */
+}
+
+
+.text-container {
+    width: 50%; /* Ajuste a largura do container de texto conforme necessário */
+    text-align: left; /* Alinha o texto à esquerda dentro do container de texto */
+}
+
+.text-container {
+    width: 55%; /* Ajuste a largura do container de texto */
+    margin-left: 50px; /* Adiciona um espaço à esquerda do texto */
+    text-align: left;
+}
+
+#imagem2{
+    display: flex;
+}
+
+#imgmao{
+    height: 200px;
+    width: 345px;
+}
