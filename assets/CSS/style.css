@@ -9,8 +9,6 @@
 body {
     background-color: #ffffff;
     height: 100vh;
-    margin-left: 120px;
-    margin-right: 120px;
 }
 
 .interface {
@@ -21,6 +19,11 @@ body {
 #imgLogo{
     width: 50px;
     height: 50px;
+    margin-left: 55%;
+}
+
+#green {
+    margin-left: 45%;
 }
 
 .logo {
@@ -31,21 +34,6 @@ body {
   #colorLogo{
     color: #00a816;
   }
-
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00a816;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px #5e5e5e6c;
-    transform: scale(1.05);
-}
 
 .flex {
     display: flex;
@@ -62,33 +50,14 @@ header>.interface {
     justify-content: space-between;
 }
 
-header a:hover {
-    color: #848478;
-    transform: scale(1.10);
-}
-
-header a {
-    color: #5e5e5e;
-    text-decoration: none;
-    display: inline-block;
-    transition: 1.5s;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
     background-image: url("../IMG/imgTopoSite.png");
+    width: 100%;
+    height: 30%;
     background-size: cover;
-    background-position: center; /* Opcional: centraliza a imagem */
+    background-position: left; /* Opcional: centraliza a imagem */
     background-repeat: no-repeat; /* Opcional: impede repetição da imagem */
 }
 
@@ -100,8 +69,9 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
     color: #ffffff;
-    font-size: 42px;
-    line-height: 40px;
+    font-size: 1em;
+    line-height: 20px;
+    margin-top: 1em;
 }
 
 .topo-do-site .txt-topo-site {
@@ -111,7 +81,12 @@ section.topo-do-site .flex {
 }
 
 #btn-topo {
-    margin: 0;             /* Remove margens desnecessárias */
+    margin: 0;
+    background-color: #00a816;
+    border-radius: 3em;
+    padding: 1em 2em;
+    font-size: 10px;
+    font-weight: bolder;
 }
 
 .topo-do-site .txt-topo-site h1 span {
@@ -128,14 +103,15 @@ section.topo-do-site .flex {
 
 .meioSite {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     background-image: url("../IMG/imgMeioSite.png");
     background-size: cover;
-    background-position: center;
+    background-position: left;
     color: white;
     text-align: left;
     position: relative;
     padding: 30px 0; /* Aumenta o padding para criar espaço */
+    height: 120%;
 }
 
 .meioSite::before { /* Overlay semi-transparente */
@@ -161,37 +137,62 @@ section.topo-do-site .flex {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    width: 40%; /* Define a largura do container de imagens */
+    /*gap: 20px;*/
+    width: 50%; /* Define a largura do container de imagens */
 }
 
 .image-container img {
     flex: 1 0 100%; /* Faz a primeira imagem ocupar 100% da largura na primeira linha */
-    height: 200px; /* Ajuste a altura conforme necessário */
+    /*height: 200px; /* Ajuste a altura conforme necessário */
     object-fit: cover;
 }
 
 .image-container img:nth-child(n+2) { /* Aplica estilo às imagens a partir da segunda */
-    flex: 1 0 calc(50% - 10px); /* 50% da largura menos metade do gap */
+    flex: 1 0 calc(60% - 10px); /* 50% da largura menos metade do gap */
 }
 
 
 .text-container {
-    width: 50%; /* Ajuste a largura do container de texto conforme necessário */
-    text-align: left; /* Alinha o texto à esquerda dentro do container de texto */
+    width: 40%; /* Ajuste a largura do container de texto conforme necessário */
+    text-align: right; /* Alinha o texto à esquerda dentro do container de texto */
 }
 
-.text-container {
-    width: 55%; /* Ajuste a largura do container de texto */
-    margin-left: 50px; /* Adiciona um espaço à esquerda do texto */
-    text-align: left;
+.imgOperario {
+    border-radius: 5em;
+    height: 30%;
+    width: 80%;
+    margin-left: 3em;
 }
 
-#imagem2{
-    display: flex;
+.imgMao {
+    border-radius: 5em;
+    width: 100%;
+    height: 30%;
+    padding-left: 3em;
+    padding-top: 0;
 }
 
-#imgmao{
-    height: 200px;
-    width: 345px;
+#txt1 {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+#txt2 {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+#txt3 {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+#txt4 {
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+#txt5 {
+    padding-bottom: 2em;
+    font-size: 1.5em;
 }
