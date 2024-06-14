@@ -1,197 +1,339 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
-    font-family: "Urbanist", sans-serif;
-
 }
 
-body {
-    background-color: #ffffff;
-    height: 100vh;
-    margin-left: 120px;
-    margin-right: 120px;
+:root {
+    font-size: 62.5%;
 }
 
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
 }
 
-#imgLogo{
-    width: 50px;
-    height: 50px;
-}
-
-.logo {
-    display: flex; /* Ativa o flexbox */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-  }
-
-  #colorLogo{
-    color: #00a816;
-  }
-
-.btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00a816;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px #5e5e5e6c;
-    transform: scale(1.05);
-}
-
-.flex {
-    display: flex;
-}
-
-/* ESTILO DO CABEÇALHO */
-header {
-    padding: 40px 4%;
-}
-
-header>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a:hover {
-    color: #848478;
-    transform: scale(1.10);
-}
-
-header a {
-    color: #5e5e5e;
+a, ul, li {
     text-decoration: none;
-    display: inline-block;
-    transition: 1.5s;
+    list-style: none;
 }
 
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-/* ESTILO DO TOPO DO SITE */
-section.topo-do-site {
-    padding: 40px 4%;
-    background-image: url("../IMG/imgTopoSite.png");
-    background-size: cover;
-    background-position: center; /* Opcional: centraliza a imagem */
-    background-repeat: no-repeat; /* Opcional: impede repetição da imagem */
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site h1 {
-    color: #ffffff;
-    font-size: 42px;
-    line-height: 40px;
-}
-
-.topo-do-site .txt-topo-site {
-    display: flex;          /* Ativa o Flexbox */
-    align-items: center;    /* Alinha verticalmente ao centro (opcional) */
-    gap: 20px;              /* Adiciona espaço entre o h1 e o botão */ 
-}
-
-#btn-topo {
-    margin: 0;             /* Remove margens desnecessárias */
-}
-
-.topo-do-site .txt-topo-site h1 span {
-    color: #00c721;
-
-}
-
-.topo-do-site .txt-topo-site p {
-    color: #fff;
-    margin: 40px 0;
-}
-
-/* ESTILO DO MEIO DO SITE */
-
-.meioSite {
+.header {
+    width: 100%;
+    height: 11rem;
+    position: fixed;
+    box-shadow: 0px 4px 4px  #40B121;
+    background: linear-gradient(90deg, #fff 41.5%, #109f70 41.51%, #009929 78%);
     display: flex;
     align-items: center;
-    background-image: url("../IMG/imgMeioSite.png");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: left;
-    position: relative;
-    padding: 30px 0; /* Aumenta o padding para criar espaço */
+    justify-content: space-evenly;
+    z-index: 1;
 }
 
-.meioSite::before { /* Overlay semi-transparente */
-    content: '';
+header ul {
+    display: flex;
+    gap: 7rem;
+}
+
+.nomeGreenwaves {
+    position: absolute;
+    right: 70%;
+    font-size: 4rem;
+    margin-left: 5rem;
+    color: #40B121;
+    text-shadow: 2px 0px 4px;
+}
+
+.logoGreenwaves {
+    position: absolute;
+    right: 83%;
+    width: 11rem;
+    height: 11rem;
+}
+
+ 
+nav {
+    position: absolute;
+    left: 50%;
+}
+
+.aNav, .navBar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    color: white;
+    padding: .5rem 1rem;
+}
+
+
+.nav ul li a {
+    position: relative;
+}
+
+.nav ul li a:hover {
+    color: #40B121;
+}
+
+.nav ul li a::after {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     width: 100%;
+    height: 0.6rem;
+    content: '.';
+    color: transparent;
+    background: #ffffff;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.nav ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
 }
 
-.meio-content {
-    position: relative; /* Para posicionar sobre o overlay */
-    z-index: 1; /* Garante que o conteúdo fique acima do overlay */
+.nav ul li a:after, .nav ul li a:before {
+    transition: all .5s;
+}
+
+/* MAIN */ 
+
+/* SECTION 1 */
+
+.section1 {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex; /* Ativa o Flexbox para o conteúdo */
-    justify-content: space-between; /* Distribui o espaço entre as imagens e o texto */
+    font-size: 3.5rem;
+    color: #fff;
 }
 
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 40%; /* Define a largura do container de imagens */
+.text-section1 {
+    position: relative;
+    left: 10rem;
+    bottom: 25rem;
+    display: inline-block;
+    width: 163.47rem;
 }
 
-.image-container img {
-    flex: 1 0 100%; /* Faz a primeira imagem ocupar 100% da largura na primeira linha */
-    height: 200px; /* Ajuste a altura conforme necessário */
+.imgSection1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 43rem;
     object-fit: cover;
 }
 
-.image-container img:nth-child(n+2) { /* Aplica estilo às imagens a partir da segunda */
-    flex: 1 0 calc(50% - 10px); /* 50% da largura menos metade do gap */
-}
-
-
-.text-container {
-    width: 50%; /* Ajuste a largura do container de texto conforme necessário */
-    text-align: left; /* Alinha o texto à esquerda dentro do container de texto */
-}
-
-.text-container {
-    width: 55%; /* Ajuste a largura do container de texto */
-    margin-left: 50px; /* Adiciona um espaço à esquerda do texto */
+.section1-btn {
+    width: 30rem;
+    position: relative;
+    left: 121rem;
+    bottom: 24rem;
+    font-size: 15px;
+    font-family: Inter;
+    color: #fff;
     text-align: left;
+    height: 23px;
 }
 
-#imagem2{
+.section-btn {
+    position: relative;
+    padding: 1rem 1rem;
+    width: 30rem;
+    border: 0;
+    border-radius: 0.8rem;
+    background: #40B121;
+    color: white;
+    font-weight: bold;
+}
+
+.linkBtn {
+    color: white;
+    padding: 1rem 5.77rem;
+   
+}
+
+.section-btn:hover {
+    background: #006400;
+    color: #fff;
+    transition: 0.2s;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+height: 100vh;
+position: relative;
+top: 10rem;
+}
+
+.title1{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #40B121;
+    bottom: 3rem;
+}
+
+.title, p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    position: relative;
+    color: #000;
+    bottom: 2.4rem;
+}
+
+.caixas {
     display: flex;
+    justify-content: space-evenly;
 }
 
-#imgmao{
-    height: 200px;
-    width: 345px;
+.box1 {
+    width: 100%;
+    position: relative;
+    top: 8rem;
+    opacity: 50%;
+    width: 54rem;
+    height: 40rem;
+    box-shadow: 0px 4px 4px #00757E;
+    border: 1px solid black;
+    border-radius: 3rem;
+}
+
+.box1:hover {
+    background: #40B121;
+    opacity: 30%;
+    transition: 0.4s;
+}
+
+.img-box1 {
+    position: relative;
+    left: 23.5rem;
+    bottom: 28rem;
+}
+
+.title-box1 {
+    position: relative;
+    left: 5rem;
+    bottom: 27rem;
+    font-size: 2.3rem;
+}
+
+.p-box1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 25rem;
+    font-size: 2.1rem;
+}
+
+.title-box2 {
+    position: relative;
+    left: 8rem;
+    bottom: 27rem;
+    font-size: 2.3rem;
+}
+
+.title-box3 {
+    position: relative;
+    left: 3.4rem;
+    bottom: 27rem;
+    font-size: 2.3rem;
+}
+
+/* SECTION 3 */
+
+.section3-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.gallery-img1 {
+    width: 30rem;
+    height: 25rem;
+    position: relative;
+    border-radius: 50px;
+    bottom: 30rem;
+    right: 33rem;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00757E;
+}
+
+.gallery-img2 {
+    width: 65rem;
+    height: 23rem;  
+    position: relative;
+    bottom: 60rem;
+    left: 27rem;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00757E;
+}
+
+.gallery-img3 {
+    width: 30rem;
+    position: relative;
+    bottom: 30rem;
+    right: 38rem;
+    border-radius: 50px;
+    height: 25rem;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px #00757E;
+}
+
+.section3-title {
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    left: 100rem;
+    bottom: 83rem;
+}
+
+.section3-subtitle {
+    position: relative;
+    font-size: 2.7rem;
+    color: white;
+    left: 100rem;
+    bottom: 83rem;
+}
+
+.section3-p1 {
+    position: relative;
+    font-size: 2.2rem;
+    color: white;
+    left: 45rem;
+    bottom: 80rem;
+}
+
+.section4-title {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #40B121;
+    bottom: 50rem;
+}
+
+.section4-p-1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    position: relative;
+    color: #000;
+    bottom: 49rem;
 }
