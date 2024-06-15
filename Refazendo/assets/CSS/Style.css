@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62,5%;
+
+    --cor1: #40B121;
+    --cor2: #18A871;
+    --cor3: #00757E;
+    --cor4: #006400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+  }
+
+.fundoSection1 {
+    width: 100vw;
+    height: 32rem;
+    object-fit: cover;
+}
+
+.logoIcon {
+    width: 6rem;
+    height: 6rem;
+}
+
+@media (max-width: 600px) {
+    .fundoSection1 {
+        display: none;
+    }
+    
+}
