@@ -1,82 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Waves</title>
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Menu Responsivo</title>
 </head>
+
 <body>
     <header>
-        <div class="interface">
+        <nav class="nav-bar">
             <div class="logo">
-                <p id="colorLogo" id="green">GREEN</p>
-                <img id="imgLogo" src="assets/IMG/logo.png" alt="Logo GreenWaves">
-                <P id="colorLogo">WAVES</P>
+                <img class="img-logo" src="./assets/img/logo.png" alt="logo">
+                <h1>GREENWAVES</h1>
             </div>
-        </div> <!-- interface -->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt="menu mobile"></button>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nossos Produtos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Equipe</a></li>
+                </ul>
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
+
+            
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nossos Produtos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
     </header>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus accusamus necessitatibus, soluta rem laudantium alias nemo atque cumque dignissimos dolorem quo dolor, pariatur saepe ut aperiam commodi placeat perspiciatis doloremque?
+    Ipsa, consequuntur assumenda! Adipisci quod eum asperiores hic corporis vero minus ullam, soluta mollitia illo libero cum assumenda vitae ipsam quo suscipit, tempore obcaecati saepe perspiciatis odio harum, aliquam inventore.
+    Facilis similique nulla saepe eum maiores! Dolorem, ab. Expedita quod qui molestiae nulla aliquid, porro vero, repellendus voluptates fugit dolor quas deserunt? Provident labore ut voluptatem veniam, illum quia assumenda.
+    Fugit mollitia eveniet aspernatur porro incidunt maiores quas totam reprehenderit quod distinctio perspiciatis amet, consequuntur ullam laborum. Nisi harum velit impedit, aperiam autem, unde voluptatibus soluta tenetur, porro eveniet hic!
+    Quasi totam, nesciunt eum, ab vel maiores quae explicabo iste porro excepturi possimus iure corrupti illo deserunt sint, suscipit impedit consectetur dolorem enim minima quam laboriosam voluptates beatae. Nobis, officiis.
+    Sit laboriosam sed obcaecati quos consectetur. Error facere reiciendis perferendis, a distinctio quis fugit aliquid commodi, debitis impedit fuga obcaecati quae! Vel numquam rerum incidunt cumque quis labore quidem tempore?</h1>
 
-    <section class="topo-do-site">
-        <div class="interface">
-            <div class="flex">
-                <div class="txt-topo-site">
-                    <h1 >Empresa de Tecnologia Ambiental especializada em desenvolver e implementar tecnologias para promover um futuro sustentável<span>.</span></h1>
-                    <div class="btn-contato">
-                       <a href="#"><button id="btn-topo">Conheça Nossos Serviços</button></a>       
-                    </div>
+    <footer>
+        <div id="footer_content">
+
+            <div id="footer_contacts">
+
+                <div class="logo-footer">
+                    <img class="img-logo" src="./assets/img/logo.png" alt="logo">
+                    <h1>GREENWAVES</h1>
+                </div>
+
+                <p id="p-redes">Nos siga nas redes:</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
-            <br>
             
-        </div><!--interface-->
-    </section> <!--topo-do-site-->
-        <br>
-    <section class="especialidades">
-        <div class="interface">
+            <ul class="footer-list">
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Empresas de tecnologias</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Universidades</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Instituições financeiras</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">ONG’S</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Governos</a>
+                </li>
+            </ul>
 
-            <h2 class="titulo">Inovação Ambiental para<span> um Mundo Sustentável</span></h2>
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Venda de painéis</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Consultória de energia solar</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dispositivos loT - monitoramento</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Auditórias detalhadas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Manutenção de painéis solares</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Planejamentos para instalação</a>
+                </li>
+            </ul>
 
-            <br>
-            <br>
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
 
-            <div class="flex">
-                <div class="especialidades-box">
-                    <i><img src="assets/IMG/truck.png" alt=""></i> 
-                    <h3>Soluções Integradas para Gestão de Resíduos</h3>
-                    <p>Oferecemos um serviço completo de coleta, transporte e tratamento de resíduos, garantindo conformidade com as regulamentações ambientais.</p>
-                  </div> <!--especialidades-box-->
-                   <div class="especialidades-box">
-                    <i><img src="assets/IMG/expetise.png" alt=""></i>  <h3>Experiência e Expertise ao Seu Dispor</h3>
-                    <p>Nossa equipe técnica conta com engenheiros e técnicos especializados, prontos para oferecer soluções personalizadas para os desafios ambientais de nossos clientes.</p>
-                  </div>  <!--especialidades-box-->
-                  <div class="especialidades-box">
-                    <i><img src="assets/IMG/lampada.png" alt=""></i><h3>Tecnologia de Ponta para Resultados Eficientes</h3>
-                    <p>Investimos em equipamentos de última geração, garantindo eficiência e segurança em todas as etapas de nossos serviços.</p>
-            
-                  </div>
-                  <!--especialidades-box-->
-            </div> <!--flex-->
-        </div> <!--interface-->
-    </section> <!--especialidades-->
-        <br>
-        <br>
-        <section class="meioSite">
-            <div class="meio-content">
-                <div class="image-container">
-                    <img src="assets/IMG/imgOperario.png" alt="Imagem 1" class="imgOperario">
-                    <img src="assets/IMG/imgMao.png" alt="Imagem 2" class="imgMao">
-                </div>                
-                <div class="text-container">
-                    <h2 id="txt1">Líder em Soluções Sustentáveis</h2>
-                    <p id="txt2">Construindo um futuro mais limpo e seguro para as gerações futuras</p>
-                    <p id="txt3">A GreenWaves, fundada em 2024, surge no mercado para ofertar serviços de engenharia, na área de consultoria e ofertando soluções completas.</p>
-                    <p id="txt4">Com equipe habilitada e capacitada, equipamentos dos mais modernos disponíveis no mercado, otimizamos mais que gestão, ofertamos tranquilidade aos clientes de terem a melhor qualidade à disposição do mercado nacional.</p>
-                    <p id="txt5">Visão da empresa em ser a melhor empresa do segmento aos seus clientes, ofertando qualidade e entregando tranquilidade.</p>
+                <p>
+                    Entre com o seu e-mail para ser notificado sobre
+                    nossas novas soluções
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
                 </div>
             </div>
-        </section>
-        <br><br><br><br><br><br>
-    
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 - Todos direitos reservados - GreenWaves
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
