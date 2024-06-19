@@ -13,8 +13,10 @@ body {
 header {
     position: fixed;
     width: 100%;
+    height: 8%;
     box-shadow: 0px 3px 10px #464646;
     background-color: #fff;
+    margin-bottom: 100px;
 }
 
 .nav-bar {
@@ -140,6 +142,28 @@ header {
         display: block;
     }
 }
+
+/* MEIO SITE */
+
+.meio-site {
+    background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp");
+    /* margin-top : 100px; */
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
