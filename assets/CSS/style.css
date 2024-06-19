@@ -17,7 +17,8 @@ header {
     box-shadow: 0px 3px 10px #464646;
     background-color: #fff;
     /* margin-bottom: 100px; */
-    opacity: 0;
+    /* opacity: 0; */
+    z-index: 1;
 }
 
 .nav-bar {
@@ -116,6 +117,8 @@ header {
     }
     .mobile-menu-icon {
         display: block;
+        position: relative;
+        left: 21%;
     }
     .mobile-menu-icon button {
         background-color: transparent;
@@ -149,6 +152,7 @@ header {
 .inicio {
     background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp");
     background-repeat: no-repeat;
+    /* background-position: center; */
     height: 100%;
     width: 100%;
     padding-bottom: 50em;
@@ -156,7 +160,7 @@ header {
 }
 
 #padding-meio {
-    padding-top: 13em;
+    padding-top: 12em;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -170,6 +174,13 @@ header {
     justify-self: center;
     border-radius: 2em;
     color: #40B121;
+}
+
+#bemvindo:hover {
+    background-color: #40B121;
+    color: #fff;
+    opacity: 70%;
+    border: 2px solid #fff;
 }
 
 #solucoes {
@@ -195,6 +206,7 @@ header {
 
 .fale-conosco {
     color: #000;
+    font-size: 80%;
 }
 
 .botao-fale-conosco {
@@ -202,6 +214,14 @@ header {
     background-color: #18a871;
     padding: 1em 2em;
     border-radius: 1em;
+    letter-spacing: 4px;
+}
+
+.botao-fale-conosco:hover {
+    background-color: #40B121;
+    color: #fff;
+    opacity: 70%;
+    border: 2px solid #fff;
 }
 
 /* MEIO SITE */
