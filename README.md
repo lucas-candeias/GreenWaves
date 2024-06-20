@@ -24,4 +24,4 @@ Fundada por ambientalistas e engenheiros ambientais em 2024, a Green Waves surge
 <!-- link do GitHub e Linkedin de cada -->
 ## Integrantes da empresa
 
-![Aluno 1](https://static.vecteezy.com/ti/vetor-gratis/p3/663156-pessoas-enfrentam-desenhos-animados-gratis-vetor.jpg)
+![Foto](https://static.vecteezy.com/ti/vetor-gratis/p3/663156-pessoas-enfrentam-desenhos-animados-gratis-vetor.jpg)
