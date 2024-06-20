@@ -6,9 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* body {
+body {
     background-color: green;
-} */
+} 
 
 header {
     position: fixed;
@@ -224,13 +224,11 @@ header {
     border: 2px solid #fff;
 }
 
-/* SECTION 2 */
+/* SECTION 2 
 
 .section2 {
-    height: 100vh;
-    position: relative;
-    top: 10rem;
-    }
+    display: flex;
+}
     
     .title1{
         display: grid;
@@ -242,7 +240,7 @@ header {
         bottom: 3rem;
     }
     
-    .title, p {
+    .title p {
         display: grid;
         justify-content: center;
         align-items: center;
@@ -311,7 +309,9 @@ header {
         font-size: 2.3rem;
     }
 
-/* MEIO SITE */
+*/   
+
+/*MEIO SITE */
 
 
 
