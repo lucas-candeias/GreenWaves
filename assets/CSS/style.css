@@ -6,9 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+/* body {
     background-color: green;
-}
+} */
 
 header {
     position: fixed;
@@ -223,6 +223,93 @@ header {
     opacity: 70%;
     border: 2px solid #fff;
 }
+
+/* SECTION 2 */
+
+.section2 {
+    height: 100vh;
+    position: relative;
+    top: 10rem;
+    }
+    
+    .title1{
+        display: grid;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        color: #40B121;
+        bottom: 3rem;
+    }
+    
+    .title, p {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        position: relative;
+        color: #000;
+        bottom: 2.4rem;
+    }
+    
+    .caixas {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .box1 {
+        width: 100%;
+        position: relative;
+        top: 15rem;
+        opacity: 50%;
+        width: 54rem;
+        height: 40rem;
+        box-shadow: 0px 4px 4px #00757E;
+        border: 1px solid black;
+        border-radius: 3rem;
+    }
+    
+    .box1:hover {
+        background: #40B121;
+        opacity: 30%;
+        transition: 0.4s;
+    }
+    
+    .img-box1 {
+        position: relative;
+        left: 23.5rem;
+        bottom: 21rem;
+    }
+    
+    .title-box1 {
+        position: relative;
+        left: 5rem;
+        bottom: 20rem;
+        font-size: 2.3rem;
+    }
+    
+    .p-box1 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 19rem;
+        font-size: 2.1rem;
+    }
+    
+    .title-box2 {
+        position: relative;
+        left: 8rem;
+        bottom: 20rem;
+        font-size: 2.3rem;
+    }
+    
+    .title-box3 {
+        position: relative;
+        left: 3.4rem;
+        bottom: 20rem;
+        font-size: 2.3rem;
+    }
 
 /* MEIO SITE */
 
