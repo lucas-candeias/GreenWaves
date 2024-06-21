@@ -6,9 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-body {
+/* body {
     background-color: green;
-} 
+}  */
 
 header {
     position: fixed;
@@ -153,9 +153,8 @@ header {
     background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp");
     background-repeat: no-repeat;
     /* background-position: center; */
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
-    padding-bottom: 50em;
     letter-spacing: 1px;
 }
 
@@ -224,92 +223,83 @@ header {
     border: 2px solid #fff;
 }
 
-/* SECTION 2 
+
+
+/* SECTION 2 */   
 
 .section2 {
-    display: flex;
+    margin-top: 7em;
+    display: grid;
+}
+
+.title1{
+    color: #40B121;
 }
     
-    .title1{
-        display: grid;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
-        color: #40B121;
-        bottom: 3rem;
-    }
-    
-    .title p {
+.title {
         display: grid;
         justify-content: center;
         align-items: center;
-        font-size: 2.5rem;
-        position: relative;
         color: #000;
-        bottom: 2.4rem;
-    }
+        text-align: center;
+        margin: 0 1em;
+}
     
-    .caixas {
-        display: flex;
-        justify-content: space-evenly;
-    }
+.title p {
+    margin-top: 1em;
+}
     
-    .box1 {
-        width: 100%;
-        position: relative;
-        top: 15rem;
-        opacity: 50%;
-        width: 54rem;
-        height: 40rem;
-        box-shadow: 0px 4px 4px #00757E;
-        border: 1px solid black;
-        border-radius: 3rem;
-    }
-    
-    .box1:hover {
-        background: #40B121;
-        opacity: 30%;
-        transition: 0.4s;
-    }
-    
-    .img-box1 {
-        position: relative;
-        left: 23.5rem;
-        bottom: 21rem;
-    }
-    
-    .title-box1 {
-        position: relative;
-        left: 5rem;
-        bottom: 20rem;
-        font-size: 2.3rem;
-    }
-    
-    .p-box1 {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        bottom: 19rem;
-        font-size: 2.1rem;
-    }
-    
-    .title-box2 {
-        position: relative;
-        left: 8rem;
-        bottom: 20rem;
-        font-size: 2.3rem;
-    }
-    
-    .title-box3 {
-        position: relative;
-        left: 3.4rem;
-        bottom: 20rem;
-        font-size: 2.3rem;
-    }
+.caixas {
+    display: grid;
+}
 
-*/   
+.caixa1 {
+    border: 1px solid black;
+    padding: 0 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+
+.img-box1 {
+    position: relative;
+    top: 2em;
+    width: 50px;
+    right: 1.5em;
+}
+    
+.title-box1 {
+    position: relative;
+    left: 1.5em;
+    bottom: 1em;
+    text-align: center;
+    font-size: 20px;
+}
+    
+.p-box1 {
+    font-size: 15px;
+}
+    
+.caixa2 {
+    border: 1px solid black;
+    padding: 0 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+    
+.caixa3 {
+    border: 1px solid black;
+    padding: 0 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+
+
 
 /*MEIO SITE */
 
@@ -334,11 +324,7 @@ header {
     padding: 0;
     box-sizing: border-box;
 
-}
-
-main {
-    height: 80vh;
-}
+} 
 
 footer {
     width: 100%;
