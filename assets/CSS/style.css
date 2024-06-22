@@ -152,10 +152,16 @@ header {
 .inicio {
     background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp");
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: top center;
     /* height: 100%; */
     width: 100%;
     letter-spacing: 1px;
+}
+
+@media screen and (min-width: 700px) {
+    .inicio {
+        background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_VERSAO-DESKTOP_.webp");
+    }
 }
 
 #padding-meio {
@@ -164,6 +170,13 @@ header {
     align-items: center;
     justify-items: center;
 }
+
+/*@media screen and (min-width: 700px) {
+    #padding-meio {
+        align-items: left;
+        justify-items: left;
+    }
+}*/
 
 #bemvindo {
     border: 1px black solid;
@@ -303,7 +316,73 @@ header {
 
 /*MEIO SITE */
 
+/* SECTION 3 */
 
+#section3 {
+    margin-top: 3em;
+}
+
+#bg3 {
+    background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-SOBRE-DESKTOP.webp");
+    background-position: center center;
+    padding-bottom: 2em;
+}
+
+#imgs-do-centro{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#caminhao-de-lixo{
+    width: 335px;
+    height: 165px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 2em 0 1em 0;
+}
+
+#reciclavel{
+    width: 160px;
+    height: 112px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 0 5px 1em 0;
+}
+
+#homem-de-mascara{
+    width: 160px;
+    height: 112px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 0 0 1em 5px;
+}
+
+#textos-centro {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 1em 2em 0 2em;
+}
+
+#textos-centro h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#textos-centro h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+#textos-centro p {
+    text-align: left;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 200;
+}
 
 
 
