@@ -373,15 +373,15 @@ header {
 #textos-centro h4 {
     text-align: center;
     color: #fff;
-    margin-top: 1em;
-    font-weight: 400;
+    margin-top: 1.5em;
+    font-weight: 500;
 }
 
 #textos-centro p {
     text-align: left;
     color: #fff;
-    margin-top: 1em;
-    font-weight: 200;
+    margin-top: 1.5em;
+    font-weight: 300;
 }
 
 
