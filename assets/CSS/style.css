@@ -16,8 +16,66 @@ body {
 /* ESTILO MAIN */
 
 #titulo{
-    margin-top: 100px;
+    margin-top: 68px;
+    background-image: url(https://alvconsultoria.com.br/wp-content/uploads/2024/04/banner-lp.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
+#h2titulo{
+    font-family: 'Anton';
+    font-size: 27px;
+    line-height: 42px;
+    color: #122F51;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#titulo p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.botao-energia {
+    background-color: #006400; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 50px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin-bottom: 20px;
+  }
+  
+  .botao-energia:hover {
+    background-color: #006400; /* Cor de fundo mais escura ao passar o mouse */
+  }
+
+.card-chamadas{
+    background-color: #f8f8f8;
+    border-radius: 45px;
+    padding: 20px 10px 20px 10px;
+    margin-top: -60px;
+    min-height: 100%;
+    text-align: center;
+}
+
+  .card-chamadas h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
 
 /* FOOTER */
 
@@ -28,6 +86,7 @@ body {
     --color-neutral-40: #f5f5f5;
 
 } */
+
 
 :root {
     --color-neutral-0: #fff;
@@ -52,6 +111,7 @@ main {
 footer {
     width: 100%;
     color: var(--color-neutral-40);
+    margin-top: 150px;
 }
 
 .logo-footer {
