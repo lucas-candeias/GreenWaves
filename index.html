@@ -1,119 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenWaves</title>
-    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Greenwaves</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-
-    <!-- HEADER LOGO-->
     <div class="container">
-        <header class="header">
-            <i class="nomeGreenwaves">GREENWAVES</i>
-            <img class="logoGreenwaves" src="assets/IMG/LogoGreenWaves.png" alt="logo">
 
-<!-- NAVBAR HEADER --> 
+        <!-- HEADER / CABEÇALHO -->
+
+        <header class="header">
+            <div class="logo-type">
+                <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
+                <i class="logo-name">GREENWAVES</i>
+            </div>
+
             <nav class="nav">
-                <ul>
-                    <li class="navBar"><a class="aNav" href="#">Início</a></li>
-                    <li class="navBar"><a class="aNav" href="#">Sobre Nós</a></li>
-                    <li class="navBar"><a class="aNav" href="#">Nossos Projetos</a></li>
-                    <li class="navBar"><a class="aNav" href="#">Contato</a></li>
+                <ul class="nav-bar">
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    <li><a href="#" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#" class="nav-link">Nossos Projetos</a></li>
+                    <li><a href="#" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
-<!-- MAIN -->
-<div class="hero">
-    <main class="main">
-
-        <!-- SECTION 1 -->
-        <section class="section1">
-            <img class="imgSection1" src="assets/IMG/backgroundSection1.jpg" alt="arvores">
-                <h1 class="text-section1">
-                 Empresa de Tecnologia Ambiental especializada em desenvolver e implementar
-                 tecnologias para promover um futuro sustentável.
-                </h1>
-
-               <div class="section1-btn">
-                 <button class="section-btn">
-                     <a class="linkBtn" href="#caixasId">Conheça nossos serviços</a>
-                 </button>
-               </div> 
-        </section>
-  
-        <!-- SECTION 2 -->
-        <section class="section2">
-            <div class="title">
-                <h1 class="title1">Inovação Ambiental para um Mundo Sustentável</h1>
-                <p>Nossa abordagem diferenciada garante soluções completas e eficazes para os </p>
-                <p>desafios ambientais contemporâneos.</p>
-            </div>
-
-           <!-- CAIXAS ESCRITAS -->
-            <div class="caixas">
-                <div id="caixasId" class="caixa1">
-                    <div class="box1"></div>
-                    <img class="img-box1" src="assets/IMG/img-box1.png" alt="">
-                    <h2 class="title-box1">Soluções Integradas para Gestão de Resíduos</h2>
-                    <p class="p-box1">Oferecemos um serviço completo de coleta, transporte e <br> tratamento de resíduos, garantindo conformidade com as <br> regulamentações ambientais. Nosso compromisso é com <br> a sustentabilidade, proporcionando soluções eficientes e <br> seguras para a gestão de resíduos.</p>
+        <!-- MAIN / SECTIONS -->
+        <main class="main">
+            <section class="section1">  <!--==== SECTION 1 ====-->
+                <h1 class="sec1-title">Empresa de Tecnologia Ambiental especializada em desenvolver e implementar tecnologias para promover um futuro sustentável.</h1>
+                <video class="video-background" src="assets/IMG/5993799-uhd_4096_2160_25fps.mp4" autoplay muted loop ></video>
+                <div class="section1-btn">
+                    <button class="btn-sec1">
+                        FALE AGORA COM UM CONSULTOR
+                    </button>
                 </div>
+            </section>
 
+            <!--==== SECTION2 ====-->
+            <section class="section2">
+                <div class="text">
+                    <h1 class="sec2-title">Inovação Ambiental para um Mundo Sustentável</h1>
+                    <p class="sec2-p">Nossa abordagem diferenciada garante soluções completas e eficazes para os </p>
+                    <p class="sec2-p">desafios ambientais contemporâneos.</p>
 
-                <div class="caixa2">
-                    <div class="box1"></div>
-                    <img class="img-box1" src="assets/IMG/img-box2.png" alt="">
-                    <h2 class="title-box2">Experiência e Expertise ao seu Dispor</h2>
-                    <p class="p-box1">Nossa equipe técnica conta com engenheiros e técnicos <br> especializados, prontos para oferecer soluções personali- <br> zadas para os desafios ambientais de nossos  clientes. <br> Utilizamos tecnologias de ponta para assegurar a máxima <br> eficiência e sustentabilidade em nossos serviços.</p>
+                    <!--CAIXAS SECTION2 -->
+                    <div class="box">
+                        <div class="box1">
+                            <div class="icone1">
+                                <img class="img1" src="assets/IMG/icone1.png" alt="">
+                                <h2 class="sec2-subtitle">Soluções Integradas para Gestão de Resíduos</h2>
+                                <p class="sec2-pbox">Oferecemos um serviço abrangente de coleta, transporte e tratamento de resíduos, assegurando total conformidade com as regulamentações ambientais vigentes. Nosso compromisso é com a sustentabilidade, proporcionando soluções eficientes e seguras para o gerenciamento de resíduos.</p>
+                            </div>
+                        </div>
+
+                        <div class="box2">
+                            <div class="icone2">
+                                <img class="img2" src="assets/IMG/icone2.png" alt="">
+                                <h2 class="sec2-subtitle">Excelência e Expertise ao Seu Dispor</h2>
+                                <p class="sec2-pbox">Nossa equipe técnica conta com engenheiros e técnicos especializados, prontos para oferecer soluções personalizadas para os desafios ambientais de nossos clientes. Trabalhamos com tecnologia de ponta para garantir a máxima eficiência e segurança em nossos serviços.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="box3">
+                            <div class="icone3">
+                                <img class="img3" src="assets/IMG/icone3.png" alt="">
+                                <h2 class="sec2-subtitle">Tecnologia de Ponta para Resultados Eficientes</h2>
+                                <p class="sec2-pbox">Investimos em tecnologia de ponta para garantir eficiência e segurança em todos os nossos serviços, promovendo um gerenciamento de resíduos mais sustentável e eficaz. Estamos comprometidos em proporcionar soluções inovadoras que atendam às necessidades específicas de cada cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--==== SECTION3 ====-->
+
+                <section class="section3">
+                    <h1 class="sec3-title">PRODUTOS E SERVIÇOS</h1>
+
+                    <!-- SECTION3 CAIXAS -->
+                    <div class="sec3-box">
+                        <div class="sec3-box1">
+                            <img class="icone-sec3" src="assets/IMG/icone eficiencia energica.png" alt="">
+                            <h2 class="sec3-subtitle">Serviços de Consultoria em Eficiência Energética</h2>
+                            <p class="sec3-p">Oferecemos serviços de consultoria em eficiência energética, incluindo auditorias detalhadas e recomendações personalizadas para edifícios e instalações. Além disso, integramos dispositivos IoT para monitorar e reduzir o consumo de energia, promovendo práticas sustentáveis que reduzem custos e emissões de carbono.</p>
+                        </div>
+
+                        <div class="sec3-box2">
+                            <img class="icone-sec3" src="assets/IMG/Icone painel solar.png" alt="">
+                            <h2 class="sec3-subtitle">Instalação de Sistemas de Energia Solar</h2>
+                            <p class="sec3-p">Oferecemos a instalação de painéis solares para residências, empresas e organizações. Nosso serviço inclui a consultoria, planejamento e instalação completa, facilitando a adoção de fontes de energia renovável e contribuindo para a redução da pegada de carbono dos nossos clientes.</p>
+                        </div>
+                    </div>
+                </section>
                 </div>
-
-
-                <div class="caixa3">
-                    <div class="box1"></div>
-                    <img class="img-box1" src="assets/IMG/img-box3.png" alt="">
-                    <h2 class="title-box3">Tecnologia de Ponta para Resultados Eficientes</h2>
-                    <p class="p-box1">Investimos em equipamentos de última geração, garantindo <br> eficiência e segurança em todas as etapas de nossos <br> serviços. Além disso, nossos processos são continuamente <br> aprimorados para atender às mais rigorosas normas ambientais <br> e às expectativas dos clientes.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 3 -->
-
-        <section class="section3">
-            <div class="gallery">
-                <img class="section3-img" src="assets/IMG/Section3Background.webp" alt="fundo verde com detalhes em arvores">
-                <img class="gallery-img2" src="assets/IMG/section2-img.jpg" alt="homem olhando computador perto de placas solares ao ar livre">
-                <img class="gallery-img3" src="assets/IMG/section3-img.jpg" alt="">
-                <img class="gallery-img1" src="assets/IMG/section1-img.jpg" alt="">
-            </div>
-
-            <div class="lateral-section3">
-                <h1 class="section3-title">Líder em Soluções Sustentáveis</h1>
-                <h2 class="section3-subtitle">Construindo um futuro mais limpo e seguro para as gerações futuras</h2>
-                <p class="section3-p1"> A GreenWaves fundada em  2024 surge no mercado para ofertar serviços de engenharia, <br> na área de consultoria e ofertando soluções completas. <br> <br> <br>
-                Com equipe habilitada e capacitada, <br> equipamentos dos mais modernos disponíveis no mercado, ofertamos mais que gestão, <br> ofertamos tranquilidade aos clientes de terem a melhor qualidade a disposição do mercado <br> nacional. <br> <br> <br>Visão da empresa em ser a melhor empresa do segmento aos seus clientes, <br> ofertando qualidade e entregando tranquilidade.</p>
-            </div>
-
-         <!-- SECTION 4 -->
-
-          <section class="section4">
-            <div class="title-section4">
-                <h1 class="section4-title">Nossos Serviços Ambientais: Soluções Sob Medida</h1>
-                <p class="section4-p-1">Da consultoria à operação, oferecemos uma gama completa de serviços para atender às</p>
-                <p class="section4-p-1">necessidades ambientais de sua empresa.</p>
-            </div>
-
-            <div class="section4-caixas">
-
-            </div>
-          </section>
-
-        </section>
-    </main>
-</div>
+        </main>
     </div>
 </body>
 </html>
