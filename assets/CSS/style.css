@@ -58,16 +58,16 @@ body {
   }
 
 .card-chamadas{
-    background-color: #f8f8f8;
+    background-color: #c4c4c4;
     border-radius: 45px;
     padding: 20px 10px 20px 10px;
-    margin-top: -60px;
-    min-height: 100%;
-    text-align: center;
+    margin: 20px;
+    
 }
 
   .card-chamadas h3{
     display: block;
+    text-align: center;
     font-size: 1.17em;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -77,41 +77,41 @@ body {
     unicode-bidi: isolate;
   }
 
+  .card-chamadas p{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #txt-meiosite{
+    margin: 30px 30px 30px 30px;
+    color: #006400;
+    font-family: 'Anton';
+    font-size: 27px;
+  }
+
+  .containerIMG {
+    display: flex; /* Usamos Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .img-servico {
+    max-width: 100%; /* Impede que a imagem ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 30px solid white; /* Adiciona a borda branca */
+  }
+  
+
 /* FOOTER */
 
-/* :root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-
-} */
 
 
-:root {
-    --color-neutral-0: #fff;
-    --color-neutral-10: #fff;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #000;
-}
-
-
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-}
-
-main {
-    height: 80vh;
-}
 
 footer {
     width: 100%;
     color: var(--color-neutral-40);
-    margin-top: 150px;
+    margin-top: 5000px;
+    
 }
 
 .logo-footer {
