@@ -312,10 +312,6 @@ header {
     justify-self: center;
 }
 
-
-
-/*MEIO SITE */
-
 /* SECTION 3 */
 
 #section3 {
@@ -384,6 +380,98 @@ header {
     font-weight: 300;
 }
 
+/* SECTION 4 */
+
+#section4 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#casinha {
+    width: 345px;
+    height: 257px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#h1-como-funciona {
+    font-weight: 350;
+    font-size: 22px;
+    color: #25d366;
+    text-align: center;
+}
+
+.div-txt-como-funciona {
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
+    width: 90%;
+    margin-top: 1.5em;
+}
+
+.h1-como-funciona {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 0.2em;
+    font-weight: 650;
+    color: #25d366;
+    line-height: 1.428571429
+}
+
+.txt-como-funciona {
+    text-align: left;
+    margin-bottom: 1em;
+    color: #525252;
+    font-size: 12px;
+    line-height: 1.428571429
+}
+
+/* SECTION 5 */
+
+#section5 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    /* width: 85%; */
+}
+
+.card-s5 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    border: #25d366 2px solid;
+    padding: 2em;
+    border-radius: 2em;
+    width: 85%;
+}
+
+.card-s5:hover {
+    background-color: #F8F8F8;
+}
+
+.h1-s5 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    color: #4267b3;
+    /* line-height: 1.428571429 */
+}
+
+.ul-s5 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.li-s5 {
+    font-size: 15px;
+    line-height: 1.428571429
+}
 
 
 
@@ -526,7 +614,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #7f37c9;
+    background-color: #40B121;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
