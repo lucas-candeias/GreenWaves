@@ -196,7 +196,7 @@ html {
 
   .box1 {
     height: 40rem;
-    width: 50rem;
+    width: 55rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     border: 1px solid #40B121;
@@ -204,7 +204,7 @@ html {
 
   .box2 {
     height: 40rem;
-    width: 50rem;
+    width: 55rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     border: 1px solid #40B121;
@@ -212,40 +212,33 @@ html {
 
   .box3 {
     height: 40rem;
-    width: 50rem;
+    width: 55rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     border: 1px solid #40B121;
   }
 
 
-  .icone1 {
+  .icone {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
-  .icone2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-  }
 
-  .icone3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+  .img1 {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.5rem;
   }
 
   .sec2-subtitle {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .sec2-pbox {
