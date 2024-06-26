@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tamanho da fonte base */
+:root {
+    font-size: 62.5%; /* Equivalente a 10px para facilitar cálculos em rem */
+}
+
+/* Estilo da barra de rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    height: 11rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #fff 41.5%, #109f70 41.51%, #009929 78%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0px 4px 4px rgba(64, 177, 33, 0.5);
+    z-index: 1000; /* Ajustado para ficar acima do conteúdo */
+}
+
+.nomeGreenwaves {
+    font-size: 3rem;
+    color: #40B121;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5); /* Melhorado o contraste do texto */
+}
+
+.logoGreenwaves {
+    width: 8rem;
+    height: auto;
+}
+
+.nav {
+    flex: 1; /* Ocupa todo o espaço restante */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    list-style: none;
+}
+
+.navBar {
+    margin-right: 2rem; /* Espaçamento entre os itens do menu */
+}
+
+.aNav {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.aNav:hover {
+    color: #40B121;
+}
+
+/* MAIN */
+.hero {
+    padding-top: 12rem; /* Ajuste para o cabeçalho não sobrepor o conteúdo */
+}
+
+.main {
+    padding: 2rem;
+}
+
+/* SECTION 1 */
+.section1 {
+    width: 100%;
+    font-size: 2.5rem;
+    color: #fff;
+    background-image: url('assets/IMG/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.text-section1 {
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* SECTION 2 */
+.section2 {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.title1 {
+    font-size: 3.5rem;
+    color: #40B121;
+    margin-bottom: 3rem;
+}
+
+.title,
+p {
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.caixas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.caixas .caixa1,
+.caixas .caixa2,
+.caixas .caixa3 {
+    text-align: center;
+}
+
+.box1 {
+    width: 30rem;
+    height: 20rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 117, 126, 0.5);
+    transition: background-color 0.4s, opacity 0.4s;
+}
+
+.box1:hover {
+    background: rgba(64, 177, 33, 0.3);
+    opacity: 0.7;
+}
+
+.img-box1 {
+    width: 10rem;
+    height: auto;
+    margin-top: -6rem; /* Ajuste para alinhar com o texto */
+}
+
+.title-box1,
+.title-box2,
+.title-box3 {
+    font-size: 2.5rem;
+    color: #40B121;
+    margin-top: 2rem;
+}
+
+.p-box1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #000;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+
+    .header {
+        height: 8rem;
+    }
+
+    .nomeGreenwaves {
+        font-size: 2rem;
+    }
+
+    .logoGreenwaves {
+        width: 6rem;
+        height: auto;
+    }
+
+    .nav {
+        display: none; /* Esconder o menu ao usar um ícone de menu para dispositivos móveis */
+    }
+
+    .navBar {
+        margin-right: 1rem; /* Reduzir o espaçamento entre os itens do menu */
+    }
+
+    .aNav {
+        padding: 1rem;
+    }
+
+    .section1 {
+        font-size: 2rem;
+    }
+
+    .title1 {
+        font-size: 2.5rem;
+    }
+
+    .title,
+    p {
+        font-size: 1.8rem;
+    }
+
+    .box1 {
+        width: 100%;
+        height: auto;
+        max-width: 30rem;
+    }
+
+    .img-box1 {
+        width: 8rem;
+    }
+
+    .title-box1,
+    .title-box2,
+    .title-box3 {
+        font-size: 2rem;
+    }
+
+    .p-box1 {
+        font-size: 1.6rem;
+    }
+}
