@@ -445,3 +445,81 @@ html {
   padding-left: 8rem;
   padding-right: 8rem;
 }
+
+
+.section5 {
+  margin-top: 30rem;
+  margin-left: 15rem;
+  padding-right: 30rem;
+}
+
+.title-sec5 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sec5-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-left: 7.4rem;
+  color: #006400;;
+}
+
+.line {
+  width: 80rem;
+  height: 0;
+  color: #18A871;
+  border: solid 1px;
+}
+
+.energy-img {
+  margin-left: 8rem;
+  margin-top: 2rem;
+  height: 42rem;
+  width: 53rem;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.sec5-box, .energy-img{
+  align-items: center;
+}
+
+.sec5-box{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  padding: 5rem;
+}
+
+
+.texts-sec5 {
+  width: 100%;
+  margin-left: 8rem;
+  margin-top: 2.4rem;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.sec5-text {
+  font-size: 2.5rem;
+  font-family: "Share Tech", sans-serif;
+  color: #006400;
+}
+
+.sec5-text-p {
+  font-size: 2rem;
+  font-family: "Share Tech", sans-serif;
+}
+
+
+
