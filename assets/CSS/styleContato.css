@@ -7,6 +7,10 @@
   font-family: "Share Tech", sans-serif;
 }
 
+
+
+/* BODY */
+
 body {
   width: 100%;
   height: 100vh;
@@ -62,6 +66,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+}
+
+.btn-info{
+    background-color: none
+    ;
 }
 
 .input-box {

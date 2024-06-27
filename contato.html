@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/styleContato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/jquery.inputmask.min.js"></script>
     <title>Formulário</title>
 </head>
 
 <body>
+
+    </div>
+
     <div class="container">
         <div class="form-image">
             <img src="assets/IMG/contatoIMG.svg" alt="">
@@ -20,13 +26,14 @@
                     <div class="title">
                         <h1>Tem alguma dúvida sobre energia solar? Nós temos as respostas. Entre em contato!</h1>
                     </div>
-                    
+
                 </div>
 
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                            required>
                     </div>
 
                     <div class="input-box">
@@ -39,19 +46,43 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="number">Telefone Fixo</label>
+                        <input id="telefone" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
                     </div>
 
                     <div class="input-box">
                         <label for="adress">CEP</label>
-                        <input id="number" type="adress" name="adress" placeholder="00000-000" required>
+                        <div class="labelcep">
+                            <input id="cep" type="" name="adress" placeholder="00000-000" required>
+                            <!-- <span class="input-group-addon">
+                                <button class="fa fa-search" onclick="buscaCep()"
+                                    style="background:transparent;border:none"></button>
+                            </span> -->
+                            <button type="button" class="btn btn-info input-control" id="requestLocador"
+                                name="requestLocador" onclick="buscaCep()" style="background:transparent;border:none"><i class="fa fa-search fa-1x"
+                                    aria-hidden="true" ></i>
+                            </button>
+                        </div>
                     </div>
 
+                    <div class="input-box">
+                        <label for="adress">UF</label>
+                        <input id="uf" type="tel" name="number" placeholder="SP" disabled>
+                    </div>
 
                     <div class="input-box">
                         <label for="adress">Endereço</label>
-                        <input id="number" type="adress" name="adress" placeholder="Av. Cruzeiro do sul n° 81" required>
+                        <input id="adress" type="adress" name="adress" placeholder="Av. *****" disabled>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="adress">Numero</label>
+                        <input id="numlogradouro" type="adress" name="adress" placeholder="01" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input  id="celular" type="text" name="number" placeholder="(xx) xxxxx-xxxx" required>
                     </div>
 
                 </div>
@@ -91,5 +122,9 @@
         </div>
     </div>
 </body>
+<script src="assets/js/cep.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 </html>
