@@ -18,6 +18,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.efeito-revelar {
+ 
+}
+
+.efeito-revelar2 {
+  visibility: hidden;
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -156,7 +164,7 @@ html {
   .section2 {
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 40rem;
   }
 
   .sec2-title {
@@ -184,7 +192,7 @@ html {
   }
 
   .box {
-    margin-top: 20rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;

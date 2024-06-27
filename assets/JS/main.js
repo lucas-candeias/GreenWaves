@@ -64,3 +64,5 @@ revelar6.reveal('.efeito-revelar6',
     duration: 5500,
     distance: '60px'
 })
+
+
