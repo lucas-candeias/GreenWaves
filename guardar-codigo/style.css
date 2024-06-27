@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#padding-meio {
+    padding-top: 12em;
+    /* display: grid; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp");
+    background-repeat: no-repeat; 
+}
+
+/*@media screen and (min-width: 700px) {
+    #padding-meio {
+        align-items: left;
+        justify-items: left;
+    }
+}*/
+
+#bemvindo {
+    border: 1px black solid;
+    padding: 1em 0;
+    width: 70%;
+    text-align: center;
+    justify-self: center;
+    border-radius: 2em;
+    color: #40B121;
+}
+
+#bemvindo:hover {
+    background-color: #40B121;
+    color: #fff;
+    opacity: 70%;
+    border: 2px solid #fff;
+}
+
+#solucoes {
+    color: #18a871;
+}
+
+.txt-inicio {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.txt-inicio p{
+    padding-top: 2em;
+    font-weight: 500;
+}
+
+.fale-conosco {
+    text-decoration: none;
+}
+
+.fale-conosco {
+    color: #000;
+    font-size: 80%;
+}
+
+.botao-fale-conosco {
+    margin-top: 2em;
+    background-color: #18a871;
+    padding: 1em 2em;
+    border-radius: 1em;
+    letter-spacing: 4px;
+}
+
+.botao-fale-conosco:hover {
+    background-color: #40B121;
+    color: #fff;
+    opacity: 70%;
+    border: 2px solid #fff;
+}
+
+/* SECTION 3 */
+
+#section3 {
+    margin-top: 3em;
+    display: none;
+}
+
+#bg3 {
+    background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-SOBRE-DESKTOP.webp");
+    background-position: center center;
+    padding-bottom: 2em;
+}
+
+#imgs-do-centro{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#caminhao-de-lixo{
+    width: 335px;
+    height: 165px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 2em 0 1em 0;
+}
+
+#reciclavel{
+    width: 160px;
+    height: 112px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 0 5px 1em 0;
+}
+
+#homem-de-mascara{
+    width: 160px;
+    height: 112px;
+    border: 4px solid white;
+    border-radius: 2em;
+    margin: 0 0 1em 5px;
+}
+
+#textos-centro {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 1em 2em 0 2em;
+}
+
+#textos-centro h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#textos-centro h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 1.5em;
+    font-weight: 500;
+}
+
+#textos-centro p {
+    text-align: left;
+    color: #fff;
+    margin-top: 1.5em;
+    font-weight: 300;
+}
+
+/* SEC 5 */
+
+#section5 {
+    display: grid;
+    /* display: none; */
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    /* width: 85%; */
+}
+
+.card-s5 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    border: #25d366 2px solid;
+    padding: 2em;
+    border-radius: 2em;
+    width: 85%;
+}
+
+.card-s5:hover {
+    background-color: #F8F8F8;
+}
+
+.h1-s5 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    color: #4267b3;
+    /* line-height: 1.428571429 */
+}
+
+.ul-s5 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.li-s5 {
+    font-size: 15px;
+    line-height: 1.428571429
+}
+
+/* SECTION 6 */
+
+#section6 {
+    display: grid;
+    /* display: none; */
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    /* width: 85%; */
+}
+
+.hr-sec6 {
+    color: #0187a7;
+    height: 6px;
+    width: 80%;
+    background-color: #0187a7;
+    border-radius: 1em;
+}
+
+.div-sec6 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    /* width: 85%; */
+}
+
+.h1-sec6 {
+    text-align: center;
+    color: #40B121;
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0 5px;
+}
+
+.img-sec6 {
+    width: 315px;
+    height: 407px;
+    margin-top: 2em;
+}
+
+.h3-sec6 {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: 300;
+    font-size: 18px;
+    color: #40B121;
+}
+
+.ul-sec6 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 85%;
+    margin-top: 2em;
+}
+
+.li-sec6 {
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 16px;
+    color: #0187a7;
+}
+
+.span-sec6 {
+    font-weight: 800;
+}
+
+.p-sec6 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #40B121;
+}
+
+.button-sec6 {
+    text-align: center;
+    margin-top: 3em;
+    background-color: #40B121;
+    padding: 0.7em;
+    border-radius: 1em;
+    border: 2px solid #fff;
+}
+
+.h3-button-sec6 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.a-sec6 {
+    text-decoration: none;
+}
