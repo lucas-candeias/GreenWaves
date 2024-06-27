@@ -4,8 +4,8 @@
 // SECTION 1
 window.revelar1 = ScrollReveal({reset:true})
 revelar1.reveal('.efeito-revelar1',
-{
-    duration: 3000,
+{  
+    duration: 3000,   
     distance: '60px'
 })
 // SECTION 2
@@ -19,19 +19,19 @@ revelar2.reveal('.efeito-revelar2',
 window.box1 = ScrollReveal({reset:true})
 box1.reveal('.efeito-box1',
 {
-    duration: 4000,
+    duration: 3000,
     distance: '70px'
 })
 window.box2 = ScrollReveal({reset:true})
 box2.reveal('.efeito-box2',
 {
-    duration: 6000,
+    duration: 4000,
     distance: '70px'
 })
 window.box3 = ScrollReveal({reset:true})
 box3.reveal('.efeito-box3',
 {
-    duration: 7000,
+    duration: 5000,
     distance: '70px'
 })
 
@@ -39,14 +39,14 @@ box3.reveal('.efeito-box3',
 window.secbox1 = ScrollReveal({reset:true})
 secbox1.reveal('.sec-box1',
 {
-    duration: 5500,
+    duration: 3500,
     distance: '90px'
 })
 
 window.secbox2 = ScrollReveal({reset:true})
 secbox2.reveal('.sec-box2',
 {
-    duration: 6500,
+    duration: 4500,
     distance: '90px'
 })
 
@@ -54,14 +54,14 @@ secbox2.reveal('.sec-box2',
 window.revelar5 = ScrollReveal({reset:true})
 revelar5.reveal('.efeito-revelar5',
 {
-    duration: 5500,
+    duration: 4500,
     distance: '90px'
 })
 
 window.revelar6 = ScrollReveal({reset:true})
 revelar6.reveal('.efeito-revelar6',
 {
-    duration: 5500,
+    duration: 4500,
     distance: '60px'
 })
 
