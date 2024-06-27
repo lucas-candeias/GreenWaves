@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenwaves</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
 </head>
 <body>
     <div class="container">
         <!-- HEADER / CABEÇALHO -->
 
-        <header class="header">
+        <header class="header efeito-revelar">
             <div class="logo-type">
                 <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
                 <i class="logo-name">GREENWAVES</i>
@@ -27,9 +29,9 @@
         </header>
 
         <!-- MAIN / SECTIONS -->
-        <main class="main">
-            <section id="inicio" class="section1">  <!--==== SECTION 1 ====-->
-                <h1 class="sec1-title">Empresa de Tecnologia Ambiental <br> especializada em desenvolver e <br> implementar tecnologias para <br>promover um futuro sustentável. </h1>
+        <main class="main ">
+            <section id="inicio" class="section1 efeito-revelar1">  <!--==== SECTION 1 ====-->
+                <h1 class="sec1-title ">Empresa de Tecnologia Ambiental <br> especializada em desenvolver e <br> implementar tecnologias para <br>promover um futuro sustentável. </h1>
                 <video class="video-background" src="assets/IMG/5993799-uhd_4096_2160_25fps.mp4" autoplay muted loop ></video>
                 <div class="section1-btn">
                     <button class="btn-sec1">
@@ -41,12 +43,12 @@
             <!--==== SECTION2 ====-->
             <section class="section2">
                 <div class="text">
-                    <h1 class="sec2-title">Inovação Ambiental para um Mundo Sustentável</h1>
-                    <p class="sec2-p">Nossa abordagem diferenciada garante soluções completas e eficazes para os </p>
-                    <p class="sec2-p">desafios ambientais contemporâneos.</p>
+                    <h1 class="sec2-title ">Inovação Ambiental para um Mundo Sustentável</h1>
+                    <p class="sec2-p efeito-revelar2">Nossa abordagem diferenciada garante soluções completas e eficazes para os </p>
+                    <p class="sec2-p efeito-revelar2">desafios ambientais contemporâneos.</p>
 
                     
-                        <div class="heart_beating">
+                        <div class="heart_beating efeito-revelar2">
                           <div class="heart">
                             <span class="shine"></span>
                           </div>
@@ -56,7 +58,7 @@
 
                     <!--CAIXAS SECTION2 -->
                     <div class="box">
-                        <div class="box1">
+                        <div class="box1 efeito-box1">
                             <div class="icone">
                                 <img class="img1" src="assets/IMG/lampada.png" alt="">
                                 <h2 class="sec2-subtitle">Reduzir significativamente os custos com energia</h2>
@@ -66,7 +68,7 @@
                             </div>
                         </div>
 
-                        <div class="box2">
+                        <div class="box2 efeito-box2">
                             <div class="icone">
                                 <img class="img1" src="assets/IMG/barras-e-grafico-de-linha-ascendente-de-analise-de-dados.png" alt="">
                                 <h2 class="sec2-subtitle">Aumentar a eficiência energética de operações</h2>
@@ -75,7 +77,7 @@
                             </div>
                         </div>
                         
-                        <div class="box3">
+                        <div class="box3 efeito-box3">
                             <div class="icone">
                                 <img class="img1" src="assets/IMG/ir-verde.png" alt="">
                                 <h2 class="sec2-subtitle">Promover a sustentabilidade</h2>
@@ -93,13 +95,13 @@
 
                     <!-- SECTION3 CAIXAS -->
                     <div class="sec3-box">
-                        <div class="sec3-box1">
+                        <div class="sec3-box1 sec-box1">
                             <img class="icone-sec3" src="assets/IMG/icone eficiencia energica.png" alt="">
                             <h2 class="sec3-subtitle">Serviços de Consultoria em Eficiência Energética</h2>
                             <p class="sec3-p">Oferecemos serviços de consultoria em eficiência energética, incluindo auditorias detalhadas e recomendações personalizadas para edifícios e instalações. Além disso, integramos dispositivos IoT para monitorar e reduzir o consumo de energia, promovendo práticas sustentáveis que reduzem custos e emissões de carbono.</p>
                         </div>
 
-                        <div class="sec3-box2">
+                        <div class="sec3-box2 sec-box2">
                             <img class="icone-sec3" src="assets/IMG/Icone painel solar.png" alt="">
                             <h2 class="sec3-subtitle">Instalação de Sistemas de Energia Solar</h2>
                             <p class="sec3-p">Oferecemos a instalação de painéis solares para residências, empresas e organizações. Nosso serviço inclui a consultoria, planejamento e instalação completa, facilitando a adoção de fontes de energia renovável e contribuindo para a redução da pegada de carbono dos nossos clientes.</p>
@@ -115,7 +117,7 @@
                         <div class="line"></div>
                     </div>
                    
-                    <div class="sec5-box">
+                    <div class="sec5-box efeito-revelar5">
                         <img class="energy-img" src="assets/IMG/energia.jpg" alt="como funciona a energia solar">
                         <div class="texts-sec5">
                             <div class="textos">
@@ -151,12 +153,12 @@
                 <!--==== SECTION 4====-->
                 <section class="section4">
                     <h1 class="sec4-title">Conheça os nossos diferenciais, você vai se impressionar</h1>
-                    <div class="section4-btn">
+                    <div class="section4-btn efeito-revelar6 ">
                         <button class="btn-sec4">
                             SOBRE NÓS
                         </button>
                     </div>
-                    <div class="section4-box">
+                    <div class="section4-box efeito-revelar6">
                         <div class="sec4-box1">
                             <div class="item1">
                                 <img src="assets/IMG/consultor.png" alt="" class="sec4-img">
@@ -185,12 +187,10 @@
                         </div>
                     </div>
                 </section>
-
-                
-                </div>
         </main>
 
         <!--==== FOOTER / RODAPÉ ====-->
     </div>
+    <script src="assets/JS/main.js" defer></script>
 </body>
 </html>

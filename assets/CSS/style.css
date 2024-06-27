@@ -527,8 +527,8 @@ html {
 
 .heart {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   background: #009929;
   transform: rotate(45deg);
   animation: beat 2s ease-out infinite;
@@ -536,41 +536,41 @@ html {
 
 .heart::before, .heart::after {
   content: '';
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background: #009929;
   position: absolute;
 }
 
 .heart::before {
-  top: -25px;
+  top: -2.5rem;
 }
 
 .heart::after {
-  left: -25px;
+  left: -2.5rem;
 }
 
 .shine {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
-  left: 25px;
-  bottom: 48px;
+  left: 2.5rem;
+  bottom: 4.8rem;
   border-radius: 100% 0%;
-  border-left: 2px solid #fff;
+  border-left: 0.2rem solid #fff;
   transform: rotate(90deg);
 }
 
 .shadow {  
-  width: 70px;
-  height: 20px;
+  width: 7rem;
+  height: 2rem;
   background: #000000;
   opacity: .2;
   border-radius: 100%;
   position: absolute;
-  bottom: -50px;
-  right: -10px;
+  bottom: -5rem;
+  right: -1rem;
   animation: beat_shadow 2s ease-out infinite;
 }
 
