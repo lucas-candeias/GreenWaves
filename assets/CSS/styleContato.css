@@ -150,77 +150,120 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
-
-    .form-image{
-        display: none;
-    }
-
+@media (max-width: 1200px) {
     .container {
-        width: 50%;
+      flex-direction: column;
+      width: 90%;
+      height: auto;
     }
+  
+    .form-image {
+      display: none;
+    }
+  
     .form {
-        width: 100%;
+      width: 100%;
+      padding: 2rem;
     }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
+  
     .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
+      flex-direction: column;
+      padding: 0;
     }
-    .gender-inputs {
-        margin-top: 2rem;
+  
+    .input-box {
+      width: 100%;
     }
+  
     .gender-group {
-        flex-direction: column;
+      flex-direction: column;
+      padding: 0;
     }
-    .gender-title h6 {
-        margin: 0;
+  
+    .continue-button button {
+      width: 100%;
     }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
-}
+  }
+  
 
-
-/* Telas médias (tablets) */
-@media (max-width: 991px) { 
+@media (max-width: 992px) {
     .container {
-        flex-direction: column; /* Muda para layout vertical em tablets */
+      flex-direction: column;
+      width: 70%;
+      height: auto;
+    }
+    
+    .form-image {
+      display: none;
+    }
+    
+    .form {
+      width: 100%;
+      padding: 1.5rem;
+    }
+    
+    .input-group {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    .input-box {
+      width: 100%;
+    }
+    
+    .gender-group {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    .continue-button button {
+      width: 100%;
+    }
+  }
+
+@media (max-width: 768px) { 
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column; /* Muda para layout vertical em dispositivos menores */
+        padding: 1rem; /* Adicione algum padding para evitar que os elementos toquem as bordas da tela */
     }
 
     .form-image {
-        display: none; /* Esconde a imagem em tablets e menores */
+        display: none; /* Esconde a imagem em dispositivos menores */
     }
 
     .form {
         width: 100%;
+        padding: 1rem; /* Ajuste o padding para garantir espaçamento adequado */
+    }
+
+    .input-group {
+        flex-direction: column; /* Organiza os inputs em coluna */
+        padding-right: 0; /* Remove padding à direita */
+    }
+
+    .input-box {
+        width: 100%; /* Garante que cada input ocupe 100% da largura disponível */
+    }
+
+    .input-box input {
+        width: 100%; /* Garante que os inputs não ultrapassem a largura da tela */
+        margin: 0.5rem 0; /* Ajuste a margem para um espaçamento uniforme */
+        padding: 0.8rem; /* Ajuste o padding conforme necessário */
+    }
+
+    .gender-group {
+        flex-direction: column; /* Organiza os inputs de gênero em coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .gender-input {
+        margin: 0.5rem 0; /* Ajusta a margem para um espaçamento uniforme */
+    }
+
+    .continue-button button {
+        width: 100%; /* Garante que o botão ocupe 100% da largura disponível */
+        margin-top: 1rem; /* Ajusta a margem para um espaçamento uniforme */
     }
 }
-
-/* Telas médias (tablets) */
-@media (max-width: 991px) { 
-    .container {
-        width: 90%; /* Ajuste a largura para 90% em tablets */
-        max-width: 700px; /* Limita a largura máxima em tablets */
-    }
-}
-
-/* Telas pequenas (celulares) */
-@media (max-width: 576px) { 
-    .container {
-        width: 95%; /* Ajuste a largura para 95% em celulares */
-    }
-}
-  
-
-  
