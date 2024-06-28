@@ -302,3 +302,148 @@ p {
     margin-top: 70px;
     font-size: 2.5rem;
 }
+
+:root {
+  --color-neutral-0: #fff;
+  --color-neutral-10: #fff;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #000;
+}
+
+/* Base styles */
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+  letter-spacing: 1px;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Corrected property name */
+}
+
+.logo-footer img {
+  width: 20%;
+  max-width: 100px; /* Adjust size as needed */
+}
+
+.logo-footer h1 {
+  color: #40b121;
+  font-weight: 500;
+  font-size: 2rem; /* Adjust font size for smaller screens */
+  padding-top: 0.7em;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-size: 1.4rem; /* Adjust font size for smaller screens */
+}
+
+#footer_content {
+  background-color: var(--color-neutral-10);
+  padding: 2rem; /* Adjust padding for smaller screens */
+  font-size: 1.4rem; /* Adjust font size for smaller screens */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Adjust gap between grid items */
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 1.5rem; /* Adjust gap between social media icons */
+  padding: 1em;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem; /* Adjust size for smaller screens */
+  width: 3rem; /* Adjust size for smaller screens */
+  font-size: 1.5rem; /* Adjust font size for smaller screens */
+}
+
+.footer-list {
+  font-size: 1.4rem; /* Adjust font size for smaller screens */
+}
+
+#footer_subscribe {
+  gap: 1rem; /* Adjust gap between elements */
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border-radius: 4px;
+  border: 1px solid #a8a29e;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.5rem; /* Adjust padding for smaller screens */
+  width: 100%;
+  min-width: 0; /* Ensure input can shrink */
+}
+
+#input_group button {
+  padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+  font-size: 1.6rem; /* Adjust font size for smaller screens */
+}
+
+#footer_copyright {
+  font-size: 1.6rem; /* Adjust font size for smaller screens */
+  padding: 1rem; /* Adjust padding for smaller screens */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .logo-footer {
+    justify-content: center; /* Center align logo on smaller screens */
+  }
+
+  .logo-footer h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .footer-link {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  #footer_content {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  #footer_social_media .footer-link {
+    height: 2.5rem; /* Adjust size for smaller screens */
+    width: 2.5rem; /* Adjust size for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .footer-list {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  #footer_subscribe {
+    gap: 1rem; /* Adjust gap between elements */
+  }
+
+  #input_group input {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  #input_group button {
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+  }
+
+  #footer_copyright {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}
