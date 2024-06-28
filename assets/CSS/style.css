@@ -9,6 +9,7 @@
     list-style: none;
 }
 
+
 :root {
     font-size: 62.5%;
     
@@ -128,10 +129,14 @@ html {
     border: 0;
     border-radius: 4rem;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Share Tech", sans-serif;
     font-size: 2.1rem;
     transition: 0.8s;
+}
+
+.btn-secc {
+  color: white;
 }
 
 .btn-sec1:hover {
