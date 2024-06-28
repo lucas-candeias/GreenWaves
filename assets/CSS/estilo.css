@@ -28,18 +28,23 @@ html {
 
 
 .nomeGreenwaves {
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: #40B121;
     text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5); /* Melhorado o contraste do texto */
+    padding: 20px;
+    margin-left: -3rem;
 }
 
 .logoGreenwaves {
-    width: 8rem;
+    width: 12rem;
     height: auto;
+    margin-left: 350px;
+    
 }
 
 .nav {
     flex: 1; /* Ocupa todo o espaço restante */
+    margin-right: 15rem;
 }
 
 .nav ul {
@@ -55,12 +60,17 @@ html {
 .aNav {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 2.9rem;
     padding: 1rem 2rem;
 }
 
 .aNav:hover {
     color: #40B121;
+    font-size: 4rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 /* MAIN */
@@ -90,9 +100,10 @@ html {
 
 .text-section1 {
    
-        font-size: 3.5rem;
+        font-size: 5rem;
         color: #40B121;
         margin-bottom: 3rem;
+        
     
 }
 
@@ -104,7 +115,7 @@ html {
     }
 
     .nomeGreenwaves {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .logoGreenwaves {
@@ -141,7 +152,7 @@ html {
     }
 
     .text-section1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -153,9 +164,10 @@ html {
 }
 
 .title1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     color: #40B121;
     margin-bottom: 3rem;
+
 }
 
 .title,
@@ -192,7 +204,7 @@ p {
 }
 
 .img-box1 {
-    width: 10rem;
+    width: 20rem;
     height: auto;
     margin-bottom: 1.5rem;
 }
@@ -200,13 +212,13 @@ p {
 .title-box1,
 .title-box2,
 .title-box3 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     color: #40B121;
     margin-bottom: 1rem;
 }
 
 .p-box1 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     line-height: 1.4;
     color: #000;
 }
@@ -283,4 +295,10 @@ p {
     .p-box1 {
         font-size: 1.4rem;
     }
+}
+.paragrafo1{
+    margin-right: 7px;
+    margin-left: 10px;
+    margin-top: 70px;
+    font-size: 2.5rem;
 }
