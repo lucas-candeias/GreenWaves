@@ -543,6 +543,12 @@ footer {
 
 .footer-link {
     text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+.footer-list li h3 {
+  font-size: 1.5em;
 }
 
 #footer_content {
@@ -558,6 +564,7 @@ footer {
 
 #p-redes {
     padding-left: 1em;
+    font-size: 1.5em;
 }
 
 #footer_social_media {
@@ -618,6 +625,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    font-size: 1.5em;
 }
 
 #footer_subscribe p {
@@ -759,7 +767,7 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
     font-family: "Share Tech", sans-serif;
 }
 
-.nav-bar{
+.nav-bar2{
     display: flex;
     align-items: center;
     gap: 9rem;
@@ -1324,160 +1332,3 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
 
 
 
-:root {
-  --color-neutral-0: #fff;
-  --color-neutral-10: #fff;
-  --color-neutral-30: #a8a29e;
-  --color-neutral-40: #000;
-
-
-footer {
-    width: 100%;
-    color: var(--color-neutral-40);
-    letter-spacing: 1px;
-}
-
-.logo-footer {
-    display: flex;
-    align-items: center;
-    justify-items: end;
-}
-
-.logo-footer img {
-    width: 20%;
-} 
-
-.logo-footer h1 {
-    color: #40B121;
-    font-weight: 500;
-    font-size: 3rem;
-    padding-top: 0.7em;
-}
-
-.footer-link {
-    text-decoration: none;
-    font-size: 1.6rem;
-}
-
-#footer_content {
-    background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
-    font-size: 1.6rem;
-}
-
-#footer_contacts h1 {
-    margin-bottom: 0.75rem;
-}
-
-#p-redes {
-    padding-left: 1em;
-    font-size: 1.8rem;
-}
-
-#footer_social_media {
-    display: flex;
-    gap: 2rem;
-    padding: 1em;
-} 
-
-#footer_social_media .footer-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    color: var(--color-neutral-40);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-#footer_social_media .footer-link i {
-    font-size: 1.25rem;    
-    
-}
-
-#footer_social_media .footer-link:hover {
-    opacity: 0.8;
-}
-
-#instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook {
-    background-color: #4267b3;
-}
-
-#whatsapp {
-    background-color: #25d366;
-}
-
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-    font-size: 1.8rem;
-}
-
-.footer-list .footer-link {
-    color: var(--color-neutral-30);
-    transition: all 0.4s;
-}
-
-.footer-list .footer-link:hover {
-    color: #40B121;
-}
-
-#footer_subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#footer_subscribe p {
-    color: var(--color-neutral-30);
-}
-
-#input_group {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-neutral-0);
-    border-radius: 4px;
-    border: 1px solid #a8a29e;
-}
-
-#input_group input {
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button {
-    background-color: #40B121;
-    border: none;
-    color: var(--color-neutral-40);
-    padding: 0px 1.25rem;
-    font-size: 2rem;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-#input_group button:hover {
-    opacity: 0.8;
-}
-
-#footer_copyright {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-neutral-0);
-    font-size: 2rem;
-    padding: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    color: #000000;
-} }
