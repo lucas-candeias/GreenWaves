@@ -150,6 +150,11 @@ body {
     color: #fff;
 }
 
+#botaomodal{
+    color: inherit; /* Herda a cor do texto do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
 @media screen and (max-width: 1330px) {
 
     .form-image{
