@@ -30,10 +30,18 @@ html {
     background: linear-gradient(90deg, #fff 35.5%, #40b121 51.5%);
 }
 
+/* Lucas Candeias mexi aqui criei uma div adicional no HTMl para poder 
+centralizar melhor os elementos sem precisar usar margin left e rigth*/
+#headerDiv{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
 .logo-type {
     display: flex;
     align-items: center;
-    margin-left: 22rem;
+    /* margin-left: 22rem; */
 }
 
 .logo-name{
@@ -44,6 +52,13 @@ html {
 .logo-icon{
     width: 10rem;
     height: 10rem;
+}
+
+/* criei um style só pra nva para separar ela do GREENWAVES e centralizar melhor  */
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
 }
 
 .nav-link{
@@ -57,8 +72,7 @@ html {
     display: flex;
     align-items: center;
     gap: 9rem;
-    margin-right: 22rem;
-    
+    /* margin-right: 22rem; */
 }
 
 .nav ul li a {
@@ -369,7 +383,7 @@ html {
   
   .section4-box{
     width: 100%;
-    height: 56rem;
+    height: auto;
     margin-top: 12rem;
     background: linear-gradient(270deg, #18A871 25.5%, #009929 70%);
     display: flex;
@@ -389,6 +403,8 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-box2 {
@@ -400,6 +416,8 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-box3 {
@@ -411,6 +429,8 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-img {
