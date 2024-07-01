@@ -1,17 +1,6 @@
 
 // ====== EFEITO DE REVELAÇÃO ===== //
 
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
-    }
-}
-
 // SECTION 1
 window.revelar1 = ScrollReveal({reset:true})
 revelar1.reveal('.efeito-revelar1',
@@ -75,4 +64,5 @@ revelar6.reveal('.efeito-revelar6',
     duration: 4500,
     distance: '60px'
 })
+
 
