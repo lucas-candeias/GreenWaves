@@ -570,7 +570,6 @@ footer {
 #footer_social_media {
     display: flex;
     gap: 2rem;
-
     padding: 1em;
 } 
 
@@ -694,7 +693,7 @@ footer {
 }
 
 .container-desktop {
-    display: block
+    display: grid
 }
 
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
@@ -1296,6 +1295,21 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
   bottom: -5rem;
   right: -1rem;
   animation: beat_shadow 2s ease-out infinite;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 3rem;    
 }
 
 @keyframes beat {
