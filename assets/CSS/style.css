@@ -1,3 +1,7 @@
+@media screen and (max-width: 699px) {
+  
+
+
 .container-mobile {
     display: block
 }
@@ -499,6 +503,7 @@ header {
   width: 85%;
 }
 
+} /*fim do @media para mobile*/
 
 /* FOOTER */
 
@@ -524,10 +529,16 @@ footer {
     letter-spacing: 1px;
 }
 
+.footer-green-center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
 .logo-footer {
     display: flex;
     align-items: center;
-    justify-items: end;
+    justify-items: center;
 }
 
 .logo-footer img {
@@ -543,12 +554,11 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    font-size: 1.5em;
-
+    font-size: 1em;
 }
 
 .footer-list li h3 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #footer_content {
@@ -563,14 +573,14 @@ footer {
 }
 
 #p-redes {
-    padding-left: 1em;
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: 1em;
 }
 
 #footer_social_media {
     display: flex;
     gap: 2rem;
-    padding: 1em;
+    margin-top: 0.5em;
 } 
 
 #footer_social_media .footer-link {
@@ -624,7 +634,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #footer_subscribe p {
@@ -685,6 +695,9 @@ footer {
         padding: 3rem 2rem;
     }
 }
+
+
+/* DESKTOP */
 
 @media screen and (min-width: 700px){
 
@@ -1010,10 +1023,10 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
     align-items: center;
     justify-content: center;
     margin-top: 6rem;
-    margin-left: 40%;
     margin-bottom: 1rem;
     width: 10rem;
     height: 10rem;
+    margin-left: 40%;
   }
 
   .sec3-subtitle {
@@ -1134,10 +1147,9 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
 .sec4-img {
   object-fit: cover;
   margin-left: 40%;
-  margin-top: 0.8rem;
+  margin-top: 3.8rem;
   width: 11rem;
   height: 11rem;
-  margin-top: 3rem;
 }
 
 .sec4-title2 {
@@ -1200,8 +1212,8 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
 .energy-img {
   margin-left: 8rem;
   margin-top: 2rem;
-  height: 42rem;
-  width: 53rem;
+  height: 39%;
+  width: 48%;
   object-fit: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 
@@ -1297,6 +1309,11 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
   animation: beat_shadow 2s ease-out infinite;
 }
 
+#p-redes {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
 #footer_social_media .footer-link {
   display: flex;
   align-items: center;
@@ -1310,6 +1327,18 @@ centralizar melhor os elementos sem precisar usar margin left e rigth*/
 
 #footer_social_media .footer-link i {
   font-size: 3rem;    
+}
+
+.footer-list {
+  font-size: 2em;
+}
+
+.footer-list li h3 {
+  font-size: 1.4em;
+}
+
+#footer_subscribe {
+  font-size: 2em;
 }
 
 @keyframes beat {
