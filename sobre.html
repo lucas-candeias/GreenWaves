@@ -1,175 +1,393 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenWaves</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/CSS/sobre.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <title>Sobre Nós</title>
 </head>
+
 <body>
-    <div class="sobre-container">
-        <!-- HEADER / CABEÇALHO -->
-
-        <header class="header">
-            <div class="logo-type">
-                <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
-                <i class="logo-name">GREENWAVES</i>
-            </div>
-            
-            <nav class="nav">
-                <ul class="nav-bar">
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#serviços" class="nav-link">Nossos Serviços</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
-                </ul>
+    <!-- HEADER -->
+    <div class="header-mobile">
+        <header id="header-m">
+            <nav class="nav-bar-m">
+                <div class="logo">
+                    <img class="img-logo-m" src="./assets/img/logo.png" alt="logo">
+                    <h1>GREENWAVES</h1>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg"
+                            alt="menu mobile"></button>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Nossos Serviços</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Sobre nós</a></li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link-m">Equipe</a></li> -->
+                    </ul>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+    
+    
             </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link-m">Início</a></li>
+                    <li class="nav-item"><a href="./index.html#serviços" class="nav-link-m">Nossos Serviços</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link-m">Sobre nós</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link-m">Equipe</a></li> -->
+                    <li class="nav-item"><a href="./contato.html" class="nav-link-m">Contato</a></li>
+                </ul>
+    
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
         </header>
+    </div>
+    <div class="container">
         
-        <main class="main">
-            <div class="empresa efeito-revelar1">
-                <img class="img-empresa" src="assets/IMG/fachada da empresa.jpeg" alt="">
+        <div class="header-pc1">
+            <header class="header">
+                <div class="logo-type">
+                    <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
+                    <i class="logo-name">GREENWAVES</i>
+                </div>
+    
+                <nav class="nav">
+                    <ul class="nav-bar">
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                        <li><a href="#serviços" class="nav-link">Nossos Serviços</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- MAIN -->
+        <div class="hero">
+            <main class="main">
+
+                <!-- SECTION 1 -->
+                <section class="section1">
+                    <img class="imgSection1" src="assets/IMG/fachada da empresa.jpeg" alt="Empresa">
+                    <center>
+                        <h1 class="text-section1">SOBRE NÓS</h1>
+
+                        <p class="paragrafo1">A Green Waves foi fundada em 2020 por engenheiros ecológicos com o
+                            propósito de enfrentar as mudanças climáticas e promover um futuro mais sustentável. <br>
+
+                            Desde a sua criação, a empresa tem se dedicado ao desenvolvimento e implementação de
+                            tecnologias verdes, incluindo energia solar, gestão de resíduos e eficiência energética.
+                            <br>
+
+                            Nossa equipe é composta por profissionais experientes e qualificados, prontos para enfrentar
+                            qualquer desafio e proporcionar a melhor experiência possível, estamos comprometidos
+                            com a excelência e a satisfação dos nossos clientes, isto é a nossa principal prioridade.
+                            <br> <br>
+
+                            Essa é a nossa fórmula para o sucesso: Nossos painéis solares se destacam por serem
+                            fabricados a partir de resíduos orgânicos e possuem a capacidade única de gerar energia
+                            mesmo em condições de baixa luminosidade.
+                            Ao captar a luz ultravioleta (UV) que atravessa densas coberturas de nuvens, garantem
+                            produção energética contínua sem a necessidade de incidência direta de luz solar. Essa
+                            inovação tecnológica nos permite alcançar uma eficiência energética de quase 50%, superando
+                            significativamente os 15% a 22% dos painéis solares convencionais.
+
+                            Inspirados por um dia nublado e chuvoso, um dos nossos fundadores observou que seus óculos,
+                            que normalmente reagem à luz solar, escureceram. Esse insight revelou que a luz ultravioleta
+                            permanece presente mesmo em condições adversas. Enquanto os painéis solares convencionais
+                            não captam essa luz, nossa tecnologia oferece uma solução eficaz para aproveitar esse
+                            recurso valioso.
+                        </p>
+
+                </section>
+
+                <!-- SECTION 2 - SOBRE NÓS -->
+                <section class="section2">
+                    <div class="title">
+                        <h1 class="title1"></h1>
+
+                    </div>
+
+                    <!-- CAIXAS ESCRITAS -->
+                    <div class="caixas">
+                        <div id="caixasId" class="caixa1">
+                            <div class="box1"></div>
+                            <img class="img-box1" src="assets/IMG/missão.png" alt="">
+                            <h2 class="title-box1">Missão</h2>
+                            <p class="p-box1">Tecnologias sustentáveis;<br>Combater a poluição;<br>Melhorar a economia
+                                tecnológica.</p>
+                        </div>
+
+                        <div class="caixa2">
+                            <div class="box1"></div>
+                            <img class="img-box1" src="assets/IMG/visão.png" alt="">
+                            <h2 class="title-box2">Visão</h2>
+                            <p class="p-box1">Preservar a natureza;<br>Ser líder em placas solares;<br>Ser líder em
+                                inovação sustentável.</p>
+                        </div>
+
+                        <div class="caixa3">
+                            <div class="box1"></div>
+                            <img class="img-box1" src="assets/IMG/valores.png" alt="">
+                            <h2 class="title-box3">Valores</h2>
+                            <p class="p-box1">Inovação;<br>Responsabilidade Social;<br>Sustentabilidade.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3 - PÚBLICO ALVO -->
+                <section class="section2">
+                    <div class="title">
+                        <h1 class="title1">PÚBLICO ALVO</h1>
+                        <p class="paragrafo1">Empresas, governos municipais e organizações sem fins lucrativos que têm
+                            como objetivo reduzir sua emissão de carbono e implementar práticas ambientalmente
+                            sustentáveis.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <section class="section2">
+            <div class="title">
+                <h1 class="title1">NOSSO DIFERENCIAL</h1>
+                <p class="paragrafo1">Nossos painéis solares possuem uma característica única: são fabricados a partir
+                    de resíduos orgânicos e
+                    têm a capacidade de gerar energia mesmo em condições de baixa luminosidade. Ao captar a luz
+                    ultravioleta (UV) que atravessa
+                    as densas coberturas de nuvens, garantem a produção de energia mesmo sem a incidência direta de luz
+                    solar. Esta tecnologia
+                    inovadora nos permite alcançar uma eficiência energética de quase 50% do tempo, superando
+                    significativamente os 15% a 22%
+                    dos painéis solares convencionais.
+                    A inspiração para essa inovação veio de um dia nublado e chuvoso, quando uma dos nossos fundadores
+                    percebeu que seus óculos,
+                    que normalmente reagem à luz do sol, escureceram. Esse insight revelou que, mesmo em condições
+                    adversas, a luz ultravioleta
+                    ainda está presente. Enquanto os painéis solares convencionais não conseguem captar essa luz, nossa
+                    tecnologia oferece uma
+                    solução eficaz para aproveitar esse recurso valioso.
+
+                </p>
             </div>
-            <div class="sobre-nos efeito-revelar1">
-                <h1 class="sobre-ns">
-                    SOBRE NÓS
-                </h1>
-                <p class="empresa-p">
-                  A Green Waves foi fundada em 2020 por engenheiros ecológicos com o propósito de enfrentar as mudanças climáticas e promover um futuro mais sustentável.
-                </p>
-                <p class="empresa-p">
-                    Desde a sua criação, a empresa tem se dedicado ao desenvolvimento e implementação de tecnologias verdes, incluindo energia solar, gestão de resíduos e eficiência energética.
-                </p>
-                <p class="empresa-p">
-                    Nossa equipe é composta por profissionais experientes e qualificados, prontos para enfrentar qualquer desafio e proporcionar a melhor experiência possível, estamos comprometidos com a excelência e a satisfação dos nossos clientes, isto é a nossa principal prioridade.
-                </p>
-            </div>
+        </section>
         </main>
-        <article class="article efeito-revelar1">
-            <h1 class="article-title">Nossos painéis</h1>
-            <p class="paineis-p">
-                Essa é a nossa fórmula para o sucesso: Nossos painéis solares se destacam por serem fabricados a partir de resíduos orgânicos e possuem a capacidade única de gerar energia mesmo em condições de baixa luminosidade. Ao captar a luz ultravioleta (UV) que atravessa densas coberturas de nuvens, garantem produção energética contínua sem a necessidade de incidência direta de luz solar. Essa inovação tecnológica nos permite alcançar uma eficiência energética de quase 50%, superando significativamente os 15% a 22% dos painéis solares convencionais. Inspirados por um dia nublado e chuvoso, um dos nossos fundadores observou que seus óculos, que normalmente reagem à luz solar, escureceram. Esse insight revelou que a luz ultravioleta permanece presente mesmo em condições adversas. Enquanto os painéis solares convencionais não captam essa luz, nossa tecnologia oferece uma solução eficaz para aproveitar esse recurso valioso.
+    </div>
+
+    <section class="section2">
+        <div class="title">
+            <h1 class="title1">PAINÉIS GREEN</h1>
+            <p class="paragrafo1">Os painéis solares green da Green Waves são uma inovação duplamente sustentável,
+                produzindo energia solar mesmo
+                em condições sem luz direta. Um componente-chave desses painéis é feito de resíduos orgânicos, como
+                compostos luminescentes
+                derivados de frutas e vegetais reciclados. Esses resíduos são provenientes de agricultores locais
+                afetados pelas mudanças
+                climáticas, oferecendo uma maneira de aproveitar colheitas estragadas para gerar energia solar.
+                Ao utilizar essas partículas de resíduos, desenvolvemos um novo tipo de filtro solar que converte raios
+                ultravioleta
+                em luz visível, permitindo a geração de eletricidade. Essa abordagem sustentável não apenas utiliza
+                recursos renováveis
+                e reciclados, mas também oferece uma solução inovadora para a produção de energia limpa.
             </p>
-        </article>
+        </div>
+    </section>
 
-        <div class="box">
-            <div class="box1 efeito-box1">
-                <div class="icone">
-                    <img class="img1" src="assets/IMG/missão.png" alt="">
-                    <h2 class="sec2-subtitle">MISSÃO</h2>
-                    <p class="sec2-pbox">- Tecnologias sustentáveis; <br> <br>
-                                         - Combater a poluição; <br> <br>
-                                         - Melhorar a economia tecnológica.  </p>
+    <section class="section2">
+        <div class="title">
+            <h1 class="title1">EMPRESAS E INSTITUIÇÕES PARCEIRAS</h1>
+            <p class="paragrafo1">• Globo Brasil Energia Solar • <br>
+                -Localização: Brasil <br>
+                -Especialização: Uma empresa que investe fortemente em tecnologias e práticas sustentáveis, focada na
+                produção de painéis solares de alta eficiência. </p>
+            <hr>
+
+            <p class="paragrafo1"> • Indústria Brasileira de Árvores (Ibá) • <br>
+                -Localização: Brasil <br>
+                -Especialização: Esta indústria é um exemplo de práticas sustentáveis, utilizando árvores plantadas para
+                a produção de papel, celulose e painéis de madeira reconstituída. </p>
+
+            <hr>
+
+            <p class="paragrafo1">• Heliatek • <br>
+                -Localização: Alemanha <br>
+                -Especialização: Heliatek é uma das líderes em células solares orgânicas (OPV). Embora não produza
+                especificamente painéis biodegradáveis, suas células solares flexíveis baseadas em
+                polímeros orgânicos representam um passo significativo em direção a tecnologias solares mais
+                sustentáveis. </p>
+
+            <hr>
+
+            <p class="paragrafo1">• Solliance • <br>
+                -Localização: Países Baixos <br>
+                -Especialização:Solliance é uma colaboração entre diversas instituições de pesquisa e empresas que
+                trabalham em tecnologias de células solares, incluindo perovskitas orgânicas e células
+                solares orgânicas. Eles focam na sustentabilidade e na redução do impacto ambiental.</p>
+
+            <hr>
+
+            <p class="paragrafo1">• Armor Solar Power Films • <br>
+                -Localização: França <br>
+                -Especialização: Armor Solar Power Films trabalha com OPVs e é conhecida por suas soluções de células
+                solares orgânicas impressas. Essas células são leves, flexíveis e têm um menor impacto
+                ambiental.</p>
+
+            <hr>
+
+            <p class="paragrafo1">• NanoFlex Power Corporation • <br>
+                -Localização: EUA <br>
+                -Especialização: NanoFlex Power desenvolve tecnologias de células solares orgânicas e de filmes finos
+                que podem ser aplicadas em várias superfícies. A empresa está comprometida com o
+                desenvolvimento de soluções energéticas sustentáveis.</p>
+
+            <hr>
+
+            <p class="paragrafo1">• Oxford PV • <br>
+                -Localização: Reino Unido <br>
+                -Especialização: Oxford PV é uma líder em células solares de perovskita. Embora seu foco principal não
+                seja necessariamente a biodegradabilidade, a empresa está desenvolvendo tecnologias
+                que são potencialmente mais sustentáveis e eficientes.</p>
+
+            <hr>
+
+        </div>
+    </section>
+    </main>
+    </div>
+
+    <section class="section2">
+        <div class="title">
+            <h1 class="title1">EMPRESAS DE MATERIAS</h1>
+            <p class="paragrafo1"> • Covestro • <br>
+                -Localização : Alemanha <br>
+                -Especialização: Covestro trabalha com polímeros de alta tecnologia que podem ser usados em diversas
+                aplicações, incluindo a encapsulação de células solares. <br> Eles estão desenvolvendo
+                polímeros mais sustentáveis e potencialmente biodegradáveis.</p>
+
+            <hr>
+
+            <p class="paragrafo1">• NatureWorks • <br>
+                -Localização: EUA <br>
+                -Especialização: NatureWorks produz o ácido polilático (PLA), um polímero biodegradável que pode ser
+                usado em várias aplicações, incluindo possíveis usos em células solares.</p>
+        </div>
+    </section>
+    </main>
+    </div>
+
+    <footer>
+        <div id="footer_content">
+
+            <div id="footer_contacts">
+
+                <div class="footer-green-center">
+                    <div class="logo-footer">
+                        <img class="img-logo" src="./assets/img/logo.png" alt="logo">
+                        <h1>GREENWAVES</h1>
+                    </div>
+                </div>
+
+                <p id="p-redes">Nos siga nas redes:</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="box2 efeito-box2">
-                <div class="icone">
-                    <img class="img1" src="assets/IMG/visão.png" alt="">
-                    <h2 class="sec2-subtitle">VISÃO</h2>
-                    <p class="sec2-pbox">- Preservar a natureza; <br> <br> 
-                                         - Ser líder em placas solares;<br> <br>
-                                         - Ser líder em inovação sustentável.</p>
-                </div>
-            </div>
-            
-            <div class="box3 efeito-box3">
-                <div class="icone">
-                    <img class="img1" src="assets/IMG/valores.png" alt="">
-                    <h2 class="sec2-subtitle">VALORES</h2>
-                    <p class="sec2-pbox">- Inovação; <br> <br> 
-                                         - Responsabilidade Social; <br> <br> 
-                                         - Sustentabilidade. 
-                    </p>
+            <ul class="footer-list">
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Empresas de tecnologias</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Universidades</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Instituições financeiras</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">ONG’S</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Governos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Venda de painéis</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Consultória de energia solar</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dispositivos loT - monitoramento</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Auditórias detalhadas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Manutenção de painéis solares</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Planejamentos para instalação</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+
+                <p>
+                    Entre com o seu e-mail para ser notificado sobre
+                    nossas novas soluções
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
                 </div>
             </div>
         </div>
-        <section class="section">
-            <div class="first-section efeito-revelar1">
-                <h1 class="section1-title">
-                    PÚBLICO ALVO
-                </h1>
-                <p class="section1-p">
-                    Empresas, governos municipais e organizações sem fins lucrativos que têm como objetivo reduzir sua emissão de carbono e implementar práticas ambientalmente sustentáveis.
-                </p>
-            </div>
-            <div class="second-section efeito-revelar1">
-                <h1 class="section2-title">
-                    NOSSO DIFERENCIAL
-                </h1>
-                <p class="section2-p">
-                    Nossos painéis solares possuem uma característica única: são fabricados a partir de resíduos orgânicos e têm a capacidade de gerar energia mesmo em condições de baixa luminosidade. Ao captar a luz ultravioleta (UV) que atravessa as densas coberturas de nuvens, garantem a produção de energia mesmo sem a incidência direta de luz solar. Esta tecnologia inovadora nos permite alcançar uma eficiência energética de quase 50% do tempo, superando significativamente os 15% a 22% dos painéis solares convencionais. A inspiração para essa inovação veio de um dia nublado e chuvoso, quando uma dos nossos fundadores percebeu que seus óculos, que normalmente reagem à luz do sol, escureceram. Esse insight revelou que, mesmo em condições adversas, a luz ultravioleta ainda está presente. Enquanto os painéis solares convencionais não conseguem captar essa luz, nossa tecnologia oferece uma solução eficaz para aproveitar esse recurso valioso.
-                </p>
-            </div>
-            <div class="terceira-section efeito-revelar1">
-                <h1 class="section3-title">
-                    PAINÉIS GREEN
-                </h1>
-                <p class="section3-p">
-                    Os painéis solares green da Green Waves são uma inovação duplamente sustentável, produzindo energia solar mesmo em condições sem luz direta. Um componente-chave desses painéis é feito de resíduos orgânicos, como compostos luminescentes derivados de frutas e vegetais reciclados. Esses resíduos são provenientes de agricultores locais afetados pelas mudanças climáticas, oferecendo uma maneira de aproveitar colheitas estragadas para gerar energia solar. Ao utilizar essas partículas de resíduos, desenvolvemos um novo tipo de filtro solar que converte raios ultravioleta em luz visível, permitindo a geração de eletricidade. Essa abordagem sustentável não apenas utiliza recursos renováveis e reciclados, mas também oferece uma solução inovadora para a produção de energia limpa.
-                </p>
-            </div>
-            <div class="quarta-section efeito-revelar1">
-                <h1 class="section4-title">
-                    EMPRESAS E INSTITUIÇÕES PARCEIRAS
-                </h1>
-                <p class="section4-p">
-                    Globo Brasil Energia Solar <br> 
-                    - Localização: Brasil <br>
-                    - Especialização: Uma empresa que investe fortemente em tecnologias e práticas sustentáveis, focada na produção de painéis solares de alta eficiência.
-                </p>
-                <p class="section4-p">
-                    Indústria Brasileira de Árvores (Ibá) <br> 
-                    - Localização: Brasil <br>
-                    - Especialização: Esta indústria é um exemplo de práticas sustentáveis, utilizando árvores plantadas para a produção de papel, celulose e painéis de madeira reconstituída.
-                </p>
-                <p class="section4-p">
-                    Heliatek <br> 
-                    - Localização: Alemanha <br>
-                    - Especialização: Heliatek é uma das líderes em células solares orgânicas (OPV). Embora não produza especificamente painéis biodegradáveis, suas células solares flexíveis baseadas em polímeros orgânicos representam um passo significativo em direção a tecnologias solares mais sustentáveis.
-                </p>
-                <p class="section4-p">
-                    Solliance <br> 
-                    - Localização: Países Baixos <br>
-                    - Especialização:Solliance é uma colaboração entre diversas instituições de pesquisa e empresas que trabalham em tecnologias de células solares, incluindo perovskitas orgânicas e células solares orgânicas. Eles focam na sustentabilidade e na redução do impacto ambiental.
-                </p>
-                <p class="section4-p">
-                    Armor Solar Power Films  <br> 
-                    - Localização: França <br>
-                    - Especialização: Armor Solar Power Films trabalha com OPVs e é conhecida por suas soluções de células solares orgânicas impressas. Essas células são leves, flexíveis e têm um menor impacto ambiental.
-                </p>
-                <p class="section4-p">
-                    NanoFlex Power Corporation  <br> 
-                    - Localização: EUA <br>
-                    - Especialização: NanoFlex Power desenvolve tecnologias de células solares orgânicas e de filmes finos que podem ser aplicadas em várias superfícies. A empresa está comprometida com o desenvolvimento de soluções energéticas sustentáveis.
-                </p>
-                <p class="section4-p">
-                    Oxford PV  <br> 
-                    - Localização: Reino Unido <br>
-                    - Especialização: Oxford PV é uma líder em células solares de perovskita. Embora seu foco principal não seja necessariamente a biodegradabilidade, a empresa está desenvolvendo tecnologias que são potencialmente mais sustentáveis e eficientes.
-                </p>
-            </div>
-            <div class="quinta-section efeito-revelar1">
-                <h1 class="section5-title">
-                    EMPRESAS DE MATERIAS
-                </h1>
-                <p class="section5-p">
-                    Covestro <br> 
-                    - Localização: Alemanha <br>
-                    - Especialização: Covestro trabalha com polímeros de alta tecnologia que podem ser usados em diversas aplicações, incluindo a encapsulação de células solares.
-                    Eles estão desenvolvendo polímeros mais sustentáveis e potencialmente biodegradáveis.
-                </p>
-                <p class="section5-p">
-                    NatureWorks  <br> 
-                    - Localização: EUA <br>
-                    - Especialização: NatureWorks produz o ácido polilático (PLA), um polímero biodegradável que pode ser usado em várias aplicações, incluindo possíveis usos em células solares.
-                </p>
-        </section>
+
+        <div id="footer_copyright">
+            &#169
+            2024 - Todos direitos reservados - GreenWaves
+        </div>
+    </footer>
+
+
+
     </div>
-    </div>
-    <script src="assets/JS/main.js" defer></script>
+    <script src="./assets/JS/script.js"></script>
+    <script src="assets/JS/main.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,723 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@media screen and (max-width: 699px) {
+  
 
 
-*{
+.container-mobile {
+    display: block
+}
+
+.container-desktop {
+    display: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* body {
+    background-color: green;
+}  */
+
+header {
+    position: fixed;
+    width: 100%;
+    /* height: 8%; */
+    box-shadow: 0px 3px 10px #464646;
+    background-color: #fff;
+    /* margin-bottom: 100px; */
+    /* opacity: 0; */
+    z-index: 10;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 6rem 1rem 3em;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    /* margin-left: 3em; */
+}
+
+.logo .icon {
+    width: 35px;
+    height: 35px;
+}
+
+.img-logo {
+    width: 50px;
+}
+
+.logo h1 {
+    color: #40B121;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icon {
+    height: 30px;
+    justify-self: end;
+    /* padding-left: 3em; */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #40B121;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+    padding: 0.3em 0.4em;
+    background-color: #0187a7;
+    border-radius: 2em;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem 1.5rem 2rem;
+        align-items: center;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        position: relative;
+        left: 34%;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/* main */
+
+.video-background {
+    width: 100%;
+    /* position: relative; */
+    height: 10em;
+    object-fit: cover;
+    margin-top: 6em;
+}
+
+.sec1-title {
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 1em;
+    font-size: 17px;
+    color: white;
+    z-index: 1;
+    font-family: "Share Tech", sans-serif;
+}
+
+.section1-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sec1 {
+    position: relative;
+    bottom: 2em;
+    border-radius: 10rem;
+    background: linear-gradient(90deg, #40B121, #18A871, #006400);
+    padding: 0.9rem;
+    border: 0;
+    border-radius: 4rem;
+    cursor: pointer;
+    color: white;
+    font-family: "Share Tech", sans-serif;
+    transition: 0.8s;
+    /* margin: 0 0 2em 0; */
+}
+
+.btn-sec1:hover {
+     animation: pulse 1.4s infinite;
+     transition: .8s;
+     box-shadow: 0 0 10px 0 #40B121 inset, 0 0 20px 2px #40B121;
+     border: 3px solid #40B121;
+}
+
+/*  */
+
+.inicio {
+    /* background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_MOBILE_-e1711661703968.webp"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* height: 100%; */
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+/* @media screen and (min-width: 700px) {
+    .inicio {
+        background-image: url("https://www.reoboteengenharia.ind.br/wp-content/uploads/2024/03/BG-HOME-_VERSAO-DESKTOP_.webp");
+    }
+} */
+
+/* SECTION 2 */   
+
+.section2 {
+    /* margin-top: 7em; */
+    display: grid;
+}
+
+.title1{
+    color: #40B121;
+}
+    
+.title {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        text-align: center;
+        margin: 0 1em;
+}
+    
+.title p {
+    margin-top: 1em;
+}
+    
+.caixas {
+    display: grid;
+}
+
+.caixa1 {
+    border: 1px solid black;
+    padding: 2em 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+
+.fgr-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box1 {
+    /* position: relative; */
+    height: 80px;
+    width: 80px;
+    margin: 2em 0;
+    display: block;
+    margin: auto;
+}
+    
+.title-box1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0.5em;
+}
+    
+.p-box1 {
+    font-size: 15px;
+    margin: 1em 0;
+    line-height: 2;
+}
+    
+.caixa2 {
+    border: 1px solid black;
+    padding: 2em 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+    
+.caixa3 {
+    border: 1px solid black;
+    padding: 2em 2em 1.5em 2em;
+    border-radius: 3em;
+    width: 90%;
+    margin-top: 2em;
+    justify-self: center;
+}
+
+/* SECTION 3 */
+
+.section3 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+  .sec3-title {
+    font-size: 1.5em;
+    font-family: "Share Tech", sans-serif;
+    color: #006400;
+    margin: 3em 0 2em 0;
+  }
+
+  .sec3-box {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .sec3-box1 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #40B121;
+    /* height: 15em; */
+    width: 85%;
+}
+
+.sec-box2 {
+    margin: 2em 0;
+}
+
+  .icone-sec3 {
+    margin: 1.5em 0;
+    width: 5em;
+    height: 5em;
+  }
+
+  .sec3-subtitle {
+    text-align: center;
+    /* font-size: 2.8rem; */
+    font-family: "Share Tech", sans-serif;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+  .sec3-p {
+    font-family: "Share Tech", sans-serif;
+    font-size: 1em;
+    width: 85%;
+    margin-bottom: 2em;
+  }
+
+/* SECTION 4 */
+
+#section4 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#casinha {
+    width: 345px;
+    height: 257px;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#h1-como-funciona {
+    font-weight: 350;
+    font-size: 22px;
+    color: #25d366;
+    text-align: center;
+}
+
+.div-txt-como-funciona {
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
+    width: 90%;
+    margin-top: 1.5em;
+}
+
+.h1-como-funciona {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 0.2em;
+    font-weight: 650;
+    color: #25d366;
+    line-height: 1.428571429
+}
+
+.txt-como-funciona {
+    text-align: left;
+    margin-bottom: 1em;
+    color: #525252;
+    font-size: 12px;
+    line-height: 1.428571429
+}
+
+/* SECTION 5 LEANDRO */ 
+
+.section5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .sec4-title {
+    font-family: "Share Tech", sans-serif;
+    color: #006400;
+  }
+
+  
+  .section4-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-sec4 {
+    border-radius: 10rem;
+    background: linear-gradient(90deg, #40B121, #18A871, #006400);
+    padding: 0.9rem;
+    border: 0;
+    border-radius: 4rem;
+    cursor: pointer;
+    color: white;
+    font-family: "Share Tech", sans-serif;
+    transition: 0.8s;
+    margin: 2em 0 4em 0;
+  }
+
+  .btn-sec4:hover {
+    animation: pulse 1.4s infinite;
+    transition: .8s;
+    box-shadow: 0 0 10px 0 #40B121 inset, 0 0 20px 2px #40B121;
+    border: 3px solid #40B121;
+  }
+  
+  .section4-box{
+    background: linear-gradient(270deg, #18A871 25.5%, #009929 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    font-family: "Share Tech", sans-serif;
+    padding: 3em 0;
+  }
+
+.sec4-box {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 30%;
+  width: 85%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: 1px solid #000000;
+  background: white;
+}
+
+.item1 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.sec4-img {
+  object-fit: cover;
+  /* margin-left: 40%; */
+  /* margin-top: 0.8rem; */
+  width: 5em;
+  height: 5em;
+  margin-top: 2em;
+}
+
+.sec4-title {
+    text-align: center;
+  /* font-size: 3rem; */
+    margin-top: 1em;
+}
+
+.sec4-p {
+  margin: 1em 0 2em 0;
+  width: 85%;
+}
+
+} /*fim do @media para mobile*/
+
+/* FOOTER */
+
+:root {
+    --color-neutral-0: #fff;
+    --color-neutral-10: #fff;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #000;
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+    letter-spacing: 1px;
+}
+
+.footer-green-center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-footer img {
+    width: 20%;
+} 
+
+.logo-footer h1 {
+    color: #40B121;
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 0.7em;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-list li h3 {
+  font-size: 1em;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#p-redes {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5em;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #40B121;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1em;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+    border: 1px solid #a8a29e;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #40B121;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #40B121;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 700px){
+
+.container-mobile {
+    display: none
+}
+
+.container-desktop {
+    display: grid
+}
+
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
-}
-
-a{
-  color: white;
 }
 
 
@@ -35,10 +741,18 @@ html {
     background: linear-gradient(90deg, #fff 35.5%, #40b121 51.5%);
 }
 
+/* Lucas Candeias mexi aqui criei uma div adicional no HTMl para poder 
+centralizar melhor os elementos sem precisar usar margin left e rigth*/
+#headerDiv{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
 .logo-type {
     display: flex;
     align-items: center;
-    margin-left: 22rem;
+    /* margin-left: 22rem; */
 }
 
 .logo-name{
@@ -51,6 +765,13 @@ html {
     height: 10rem;
 }
 
+/* criei um style só pra nva para separar ela do GREENWAVES e centralizar melhor  */
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+}
+
 .nav-link{
     font-size: 2.2rem;
     color: white;
@@ -58,12 +779,11 @@ html {
     font-family: "Share Tech", sans-serif;
 }
 
-.nav-bar{
+.nav-bar2{
     display: flex;
     align-items: center;
     gap: 9rem;
-    margin-right: 22rem;
-    
+    /* margin-right: 22rem; */
 }
 
 .nav ul li a {
@@ -99,12 +819,9 @@ html {
   .nav ul li a:after, .nav ul li a:before {
     transition: all .5s;
 }
-
-/* botao */ 
-
-
+  
 .video-background {
-    width: 100vw;
+    width: 100%;
     position: relative;
     height: 60rem;
     object-fit: cover;
@@ -169,7 +886,7 @@ html {
   .section2 {
     display: flex;
     justify-content: center;
-    margin-top: 25rem;
+    margin-top: 40rem;
   }
 
   .sec2-title {
@@ -266,6 +983,8 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10rem;
   }
 
   .sec3-title {
@@ -279,7 +998,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 10rem;
     margin-top: 15rem;
   }
@@ -305,10 +1023,10 @@ html {
     align-items: center;
     justify-content: center;
     margin-top: 6rem;
-    margin-left: 40%;
     margin-bottom: 1rem;
     width: 10rem;
     height: 10rem;
+    margin-left: 40%;
   }
 
   .sec3-subtitle {
@@ -333,6 +1051,7 @@ html {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 10rem;
   }
 
   .sec4-title {
@@ -375,7 +1094,7 @@ html {
   
   .section4-box{
     width: 100%;
-    height: 56rem;
+    height: auto;
     margin-top: 12rem;
     background: linear-gradient(270deg, #18A871 25.5%, #009929 70%);
     display: flex;
@@ -395,6 +1114,8 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-box2 {
@@ -406,6 +1127,8 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-box3 {
@@ -417,15 +1140,16 @@ html {
   border-radius: 30px;
   border: 1px solid #000000;
   background: white;
+  margin: 7px;
+  margin-bottom: 7px;
 }
 
 .sec4-img {
   object-fit: cover;
   margin-left: 40%;
-  margin-top: 0.8rem;
+  margin-top: 3.8rem;
   width: 11rem;
   height: 11rem;
-  margin-top: 3rem;
 }
 
 .sec4-title2 {
@@ -458,7 +1182,7 @@ html {
 
 
 .section5 {
-  margin-top: 15rem;
+  margin-top: 30rem;
   margin-left: 15rem;
   padding-right: 30rem;
 }
@@ -487,8 +1211,9 @@ html {
 
 .energy-img {
   margin-left: 8rem;
-  height: 42rem;
-  width: 53rem;
+  margin-top: 2rem;
+  height: 39%;
+  width: 48%;
   object-fit: cover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 
@@ -496,23 +1221,21 @@ html {
 
 .sec5-box, .energy-img{
   align-items: center;
-  justify-content: center;
 }
 
 .sec5-box{
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   padding: 5rem;
-  flex-wrap: wrap;
 }
 
 
 .texts-sec5 {
-  width: 50%;
+  width: 100%;
   margin-left: 8rem;
-  margin-top: 4rem;
+  margin-top: 2.4rem;
 }
 
 .textos {
@@ -586,6 +1309,38 @@ html {
   animation: beat_shadow 2s ease-out infinite;
 }
 
+#p-redes {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 3rem;    
+}
+
+.footer-list {
+  font-size: 2em;
+}
+
+.footer-list li h3 {
+  font-size: 1.4em;
+}
+
+#footer_subscribe {
+  font-size: 2em;
+}
+
 @keyframes beat {
   0%, 40%, 70%, 100%{
     transform: scale(1) rotate(45deg);
@@ -609,2152 +1364,5 @@ html {
     transform: scale(1.2);
   }
 }
-
-/* RESPONSIVO  CELULARES */ 
-@media (max-width: 480px){
-
-  /* SECTION 1 */ 
- 
-   .nav {
-     display: none;
-   }
-   .header{
-     width: 100vh;
-     background: linear-gradient(90deg, #fff 40.5%, #40b121 35.5%);
-   }
-   .logo-type{
-     margin-left: 4.5rem;
-   }
-   .logo-name{
-     font-size: 2.9rem;
-   }
-   .logo-icon{
-     height: 8rem;
-     width: 8rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 30rem;
-   }
-   .sec1-title{
-     margin-top: 12.5rem;
-     margin-left: 1.5rem;
-     font-size:  3rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 4rem;
-     width: 30rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 1.8rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 6rem;
-   }
-   .sec2-title{
-     width: 80vw;
-     font-size: 2.8rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     width: 80%;
-     font-size: 2rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 5rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box2{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box3{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box1 .sec2-subtitle{
-     margin-left: 2.5rem;
-   }
-   .box2 .sec2-subtitle{
-     margin-left: 4rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 2.5rem;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.8rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-     font-size: 2.2rem;
-   }
-
-   .btn-sec4, .btnc-a {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-   }
-
-   .btn-a {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   font-size: 3rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-   height: 41rem;
-   width: 38rem;
- }
- .sec3-box2{
-   height: 41rem;
-   width: 38rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 2rem;
- }
- .sec3-subtitle{
-   font-size: 2.7rem;
-   width: 90%;
-   margin-left: 4.5rem;
- }
- .sec3-p{
-   font-size: 2rem;
-   padding-left: 1.4rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-  font-size: 3.5rem;
-  margin-right: 5rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 25rem;
-   width: 37rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 0;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 2.8rem;
- }
- .sec5-text-p{
-   font-size: 1.8rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   width: 90%;
-   font-size: 3rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 120rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 30rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.8rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 8rem;
-   height: 8rem;
- }
- .sec4-title2{
-   font-size: 2.7rem;
- }
- .sec4-p1{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.89rem;
- }
- .sec4-p2{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p3{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- }    
-
-@media (max-width: 430px){
-
-  /* SECTION 1 */ 
- 
-   .nav {
-     display: none;
-   }
-   .header{
-     width: 100vh;
-     background: linear-gradient(90deg, #fff 40.5%, #40b121 35.5%);
-   }
-   .logo-type{
-     margin-left: 2.5rem;
-   }
-   .logo-name{
-     font-size: 2.9rem;
-   }
-   .logo-icon{
-     height: 8rem;
-     width: 8rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 30rem;
-   }
-   .sec1-title{
-     margin-top: 12.5rem;
-     margin-left: 1.5rem;
-     font-size:  3rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 4rem;
-     width: 30rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 1.8rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 6rem;
-   }
-   .sec2-title{
-     width: 80vw;
-     font-size: 2.8rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     width: 80%;
-     font-size: 2rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 5rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box2{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box3{
-     width: 38rem;
-     height: 48rem;
-   }
-   .box1 .sec2-subtitle{
-     margin-left: 2.5rem;
-   }
-   .box2 .sec2-subtitle{
-     margin-left: 4rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 2.5rem;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.8rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-     font-size: 2.2rem;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   font-size: 3rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-   height: 41rem;
-   width: 38rem;
- }
- .sec3-box2{
-   height: 41rem;
-   width: 38rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 2rem;
- }
- .sec3-subtitle{
-   font-size: 2.7rem;
-   width: 90%;
-   margin-left: 4.5rem;
- }
- .sec3-p{
-   font-size: 2rem;
-   padding-left: 1.4rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-  font-size: 3.5rem;
-  margin-right: 5rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 25rem;
-   width: 37rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 0;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 2.8rem;
- }
- .sec5-text-p{
-   font-size: 1.8rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   width: 90%;
-   font-size: 3rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 120rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 38rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 30rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.8rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 8rem;
-   height: 8rem;
- }
- .sec4-title2{
-   font-size: 2.7rem;
- }
- .sec4-p1{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.89rem;
- }
- .sec4-p2{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p3{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- }    
-
-@media (max-width: 415px){
-
-  /* SECTION 1 */ 
- 
-   .nav {
-     display: none;
-   }
-   .header{
-     width: 100vh;
-     background: linear-gradient(90deg, #fff 40.5%, #40b121 35.5%);
-   }
-   .logo-type{
-     margin-left: 2rem;
-   }
-   .logo-name{
-     font-size: 2.7rem;
-   }
-   .logo-icon{
-     height: 8rem;
-     width: 8rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 30rem;
-   }
-   .sec1-title{
-     margin-top: 12.5rem;
-     margin-left: 1.5rem;
-     font-size:  2.8rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 4rem;
-     width: 30rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 1.8rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 6rem;
-   }
-   .sec2-title{
-     width: 80vw;
-     font-size: 2.8rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     width: 80%;
-     font-size: 2rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 5rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 35rem;
-     height: 48rem;
-   }
-   .box2{
-     width: 35rem;
-     height: 48rem;
-   }
-   .box3{
-     width: 35rem;
-     height: 48rem;
-   }
-   .box1 .sec2-subtitle{
-    width: 90%;
-     margin-left: 1rem;
-   }
-   .box2 .sec2-subtitle{
-    width: 90%;
-     margin-left: 4rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 7rem;
-     width: 80%;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.8rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-     font-size: 2.2rem;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   font-size: 3rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-   height: 41rem;
-   width: 33rem;
- }
- .sec3-box2{
-   height: 41rem;
-   width: 33rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 2rem;
- }
- .sec3-subtitle{
-   font-size: 2.7rem;
-   width: 90%;
-   margin-left: 1.5rem;
- }
- .sec3-p{
-   font-size: 1.9rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-  font-size:3.5rem;
-  margin-right: 5rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 25rem;
-   width: 37rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 0;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 2.8rem;
- }
- .sec5-text-p{
-   font-size: 1.8rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   width: 90%;
-   font-size: 2.8rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 120rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 30rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.8rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 8rem;
-   height: 8rem;
- }
- .sec4-title2{
-   font-size: 2.7rem;
- }
- .sec4-p1{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p2{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p3{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- }    
-
-@media (max-width: 375px){
-
-  /* SECTION 1 */ 
- 
-   .nav {
-     display: none;
-   }
-   .header{
-     width: 100vh;
-     background: linear-gradient(90deg, #fff 40.5%, #40b121 35.5%);
-   }
-   .logo-type{
-     margin-left: 1rem;
-   }
-   .logo-name{
-     font-size: 2.5rem;
-   }
-   .logo-icon{
-     height: 8rem;
-     width: 8rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 30rem;
-   }
-   .sec1-title{
-     margin-top: 12.5rem;
-     margin-left: 1.5rem;
-     font-size:  2.6rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 4rem;
-     width: 28rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 1.6rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 6rem;
-   }
-   .sec2-title{
-     width: 80vw;
-     font-size: 2.6rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     width: 80%;
-     font-size: 2rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 5rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 33rem;
-     height: 48rem;
-   }
-   .box2{
-     width: 33rem;
-     height: 48rem;
-   }
-   .box3{
-     width: 33rem;
-     height: 48rem;
-   }
-   .box1 .sec2-subtitle{
-    width: 90%;
-     margin-left: 1rem;
-   }
-   .box2 .sec2-subtitle{
-    width: 90%;
-     margin-left: 4rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 7rem;
-     width: 80%;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.8rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-     font-size: 2.2rem;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   font-size: 3rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-   height: 41rem;
-   width: 33rem;
- }
- .sec3-box2{
-   height: 41rem;
-   width: 33rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 2rem;
- }
- .sec3-subtitle{
-   font-size: 2.7rem;
-   width: 90%;
-   margin-left: 1.5rem;
- }
- .sec3-p{
-   font-size: 1.9rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-  font-size: 2.8rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 25rem;
-   width: 33rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 0;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 2.8rem;
- }
- .sec5-text-p{
-   font-size: 1.8rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   width: 90%;
-   font-size: 2.8rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 120rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 33rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 30rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.8rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 8rem;
-   height: 8rem;
- }
- .sec4-title2{
-   font-size: 2.7rem;
- }
- .sec4-p1{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p2{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p3{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- }    
-
-@media (max-width: 360px){
-
-  /* SECTION 1 */ 
- 
-   .nav {
-     display: none;
-   }
-   .header{
-     width: 100vh;
-     background: linear-gradient(90deg, #fff 40.5%, #40b121 35.5%);
-   }
-   .logo-type{
-     margin-left: 2.5rem;
-   }
-   .logo-name{
-     font-size: 2rem;
-   }
-   .logo-icon{
-     height: 8rem;
-     width: 8rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 30rem;
-   }
-   .sec1-title{
-     margin-top: 12.5rem;
-     margin-left: 1rem;
-     font-size:  2.5rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 4rem;
-     width: 25rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 1.6rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 6rem;
-   }
-   .sec2-title{
-     width: 80vw;
-     font-size: 2.7rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     width: 80%;
-     font-size: 1.8rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 5rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 30rem;
-     height: 42rem;
-   }
-   .box2{
-     width: 30rem;
-     height: 42rem;
-   }
-   .box3{
-     width: 30rem;
-     height: 42rem;
-   }
-   .box1 .sec2-subtitle{
-     margin-left: 2rem;
-   }
-   .box2 .sec2-subtitle{
-     margin-left: 4rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 7rem;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.5rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-     font-size: 1.8rem;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   font-size: 2.8rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-   height: 41rem;
-   width: 30rem;
- }
- .sec3-box2{
-   height: 41rem;
-   width: 30rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 2rem;
- }
- .sec3-subtitle{
-   font-size: 2.5rem;
-   width: 90%;
-   margin-left: 1.5rem;
- }
- .sec3-p{
-   font-size: 1.8rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 2.8rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 25rem;
-   width: 33rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 0;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 2.7rem;
- }
- .sec5-text-p{
-   font-size: 1.7rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   width: 90%;
-   font-size: 2.6rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 120rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   height: 32rem;
-   width: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 25rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.8rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 7rem;
-   height: 7rem;
- }
- .sec4-title2{
-   font-size: 2.3rem;
- }
- .sec4-p1{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.9rem;
- }
- .sec4-p2{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.8rem;
- }
- .sec4-p3{
-   margin-top: 1.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.8rem;
- }
- }    
- 
-@media (max-width: 320px){
-
- /* SECTION 1 */ 
-
-  .nav {
-    display: none;
-  }
-  .header{
-    width: 100vh;
-    background: linear-gradient(90deg, #fff 45.5%, #40b121 45.5%);
-  }
-  .logo-type{
-    margin-left: 3.5rem;
-  }
-  .logo-name{
-    font-size: 1.5rem;
-  }
-  .logo-icon{
-    height: 6rem;
-    width: 6rem;
-  }
-  .video-background{
-    width: 100vw;
-    height: 28rem;
-  }
-  .sec1-title{
-    margin-top: 12rem;
-    font-size:  2.2rem;
-  }
-  .btn-sec1{
-    border-radius: 10rem;
-    height: 4rem;
-    width: 20rem;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-  }
-
-  /* SECTION 2 */ 
-
-  .section2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8rem;
-  }
-  .sec2-title{
-    width: 80vw;
-    font-size: 2.4rem;
-    color: #006400;
-    font-weight: bolder;
-  }
-  .sec2-p{
-    width: 80%;
-    font-size: 1.6rem;
-    overflow-wrap: break-word;
-    font-weight: 100;
-    font-family: "Share Tech", sans-serif;
-  }
-  .box{
-    gap: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .box1{
-    width: 25rem;
-    height: 42rem;
-  }
-  .box2{
-    width: 25rem;
-    height: 42rem;
-  }
-  .box3{
-    width: 25rem;
-    height: 42rem;
-  }
-  .box1 .sec2-subtitle{
-    margin-left: 2rem;
-  }
-  .box2 .sec2-subtitle{
-    margin-left: 4rem;
-  }
-  .box3 .sec2-subtitle{
-    margin-left: 7rem;
-  }
-  .img1{
-    width: 6rem;
-    height: 6rem;
-  }
-  .sec2-subtitle{
-    font-size: 2rem;
-    width: 90%;
-  }
-  .sec2-pbox{
-    font-size: 1.55rem;
-  }
-
-
-/* SECTION 3 */ 
-
-.sec3-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  font-size: 2.4rem;
-  margin-top: 7rem;
+    
 }
-.sec3-box{
-  gap: 3rem;
-  margin-top: 5rem;
-}
-.sec3-box1{
-  height: 37rem;
-  width: 25rem;
-}
-.sec3-box2{
-  height: 37rem;
-  width: 25rem;
-}
-.icone-sec3{
-  width: 6rem;
-  height: 6rem;
-  margin-top: 2rem;
-}
-.sec3-subtitle{
-  font-size: 2rem;
-  width: 80%;
-  margin-left: 3rem;
-}
-.sec3-p{
-  font-size: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* SECTION 5 */ 
-
-.section5{
-  margin-left: 0;
-  margin-top: 6rem;
-  width: 100vw;
-  flex-wrap: wrap;
-  padding: 0;
-}
-.title-sec5 {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.sec5-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.4rem;
-}
-.line {
-  display: none;
-}
-.energy-img {
-  margin-left: 0rem;
-  margin-top: 0rem;
-  height: 25rem;
-  width: 30rem;
-}
-.sec5-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 0;
-}
-.textos{
-  width: 100%;
-  gap: 3rem;
-}
-.texts-sec5{
-  width: 100%;
-  margin-top: 2.5rem;
-  margin-left: 0;
-}
-.sec5-text{
-  font-size: 2.4rem;
-}
-.sec5-text-p{
-  font-size: 1.5rem;
-}
-
-/* SECTION 4 */
-.sec4-title{
-  width: 90%;
-  font-size: 2.3rem;
-  margin-top: 5rem;
-}
-.section4-box{
-  height: 120rem;
-  font-family: "Share Tech", sans-serif;
-}
-.sec4-box1 {
-  display: flex;
-  justify-content: center;
-  height: 32rem;
-  width: 28rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  border: 1px solid #000000;
-  background: white;
-}
-.sec4-box2 {
-  display: flex;
-  justify-content: center;
-  height: 32rem;
-  width: 28rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  border: 1px solid #000000;
-  background: white;
-}
-.sec4-box3{
-  display: flex;
-  justify-content: center;
-  height: 32rem;
-  width: 28rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  border: 1px solid #000000;
-  background: white;
-}
-.btn-sec4 {
-  position: absolute;
-  height: 4rem;
-  width: 20rem;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-}
-.sec4-img {
-  object-fit: cover;
-  margin-left: 40%;
-  margin-top: 0.8rem;
-  width: 11rem;
-  height: 11rem;
-  margin-top: 1rem;
-}
-.sec4-img{
-  width: 6rem;
-  height: 6rem;
-}
-.sec4-title2{
-  font-size: 2rem;
-}
-.sec4-p1{
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.8rem;
-}
-.sec4-p2{
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.8rem;
-}
-.sec4-p3{
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.8rem;
-}
-}    
-
-@media screen and (min-width: 1024px) and (max-width: 1440px){
-
-  /* SECTION 1 */ 
-   .header{
-     width: 100vw;
-     background: linear-gradient(90deg, #fff 55.5%, #40b121 40%);
-   }
-   .nav-bar{
-    margin-right: 7rem;
-    gap: 3rem;
-   }
-   .logo-type{
-     margin-left: 15.5rem;
-   }
-   .logo-name{
-     font-size: 3.5rem;
-   }
-   .logo-icon{
-     height: 10rem;
-     width: 10rem;
-   }
-   .video-background{
-     width: 100vw;
-     height: 35rem;
-   }
-   .sec1-title{
-     margin-top: 12rem;
-     font-size:  4rem;
-   }
-   .btn-sec1{
-     border-radius: 10rem;
-     height: 5rem;
-     width: 30rem;
-     cursor: pointer;
-     color: rgb(255, 255, 255);
-     font-size: 2rem;
-   }
- 
-   /* SECTION 2 */ 
- 
-   .section2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 8rem;
-   }
-   .sec2-title{
-     font-size: 3.5rem;
-     color: #006400;
-     font-weight: bolder;
-   }
-   .sec2-p{
-     font-size: 2.2rem;
-     overflow-wrap: break-word;
-     font-weight: 100;
-     font-family: "Share Tech", sans-serif;
-   }
-   .box{
-     gap: 2rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .box1{
-     width: 40rem;
-     height: 40rem;
-   }
-   .box2{
-    width: 40rem;
-    height: 40rem;
-   }
-   .box3{
-    width: 40rem;
-    height: 40rem;
-    margin-top: 1rem;
-   }
-   .box1 .sec2-subtitle{
-     margin-left: 5rem;
-   }
-   .box2 .sec2-subtitle{
-     margin-left: 2.7rem;
-   }
-   .box3 .sec2-subtitle{
-     margin-left: 6rem;
-   }
-   .img1{
-     width: 8rem;
-     height: 8rem;
-   }
-   .sec2-subtitle{
-     font-size: 2.6rem;
-     width: 90%;
-   }
-   .sec2-pbox{
-    margin-top: 1rem;
-     font-size: 1.8rem;
-   }
- 
- 
- /* SECTION 3 */ 
- 
- .sec3-title{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 3.5rem;
-   margin-top: 7rem;
- }
- .sec3-box{
-   gap: 3rem;
-   margin-top: 5rem;
- }
- .sec3-box1{
-  width: 40rem;
-  height: 40rem;
- }
- .sec3-box2{
-  width: 40rem;
-  height: 40rem;
- }
- .icone-sec3{
-   width: 8rem;
-   height: 8rem;
-   margin-top: 4rem;
- }
- .sec3-subtitle{
-   font-size: 2.6rem;
-   width: 80%;
-   margin-left: 3rem;
- }
- .sec3-p{
-   font-size: 1.9rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
- }
- 
- /* SECTION 5 */ 
- 
- .section5{
-   margin-left: 0;
-   margin-top: 6rem;
-   width: 100vw;
-   flex-wrap: wrap;
-   padding: 0;
- }
- .title-sec5 {
-   width: 100vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 2rem;
- }
- .sec5-title{
-   font-size: 3rem;
-   margin-right: 7rem;
- }
- .line {
-   display: none;
- }
- .energy-img {
-   margin-left: 0rem;
-   margin-top: 0rem;
-   height: 40rem;
-   width: 50rem;
- }
- .sec5-box{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 95%;
-   margin-top: 0;
-   margin-left: 3.2rem;
- }
- .textos{
-   width: 100%;
-   gap: 3rem;
- }
- .texts-sec5{
-   width: 100%;
-   margin-top: 2.5rem;
-   margin-left: 0;
- }
- .sec5-text{
-   font-size: 3rem;
- }
- .sec5-text-p{
-   font-size: 2rem;
- }
- 
- /* SECTION 4 */
- .sec4-title{
-   display: flex;
-   justify-content: center;
-   width: 90%;
-   font-size: 4rem;
-   margin-top: 5rem;
- }
- .section4-box{
-   height: 40rem;
-   font-family: "Share Tech", sans-serif;
- }
- .sec4-box1 {
-   display: flex;
-   justify-content: center;
-   width: 35rem;
-   height: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box2 {
-   display: flex;
-   justify-content: center;
-   width: 35rem;
-   height: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .sec4-box3{
-   display: flex;
-   justify-content: center;
-   width: 35rem;
-   height: 30rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border-radius: 30px;
-   border: 1px solid #000000;
-   background: white;
- }
- .btn-sec4 {
-   position: absolute;
-   height: 4rem;
-   width: 20rem;
-   cursor: pointer;
-   color: rgb(255, 255, 255);
-   font-size: 1.3rem;
- }
- .sec4-img {
-   object-fit: cover;
-   margin-left: 40%;
-   margin-top: 0.8rem;
-   width: 11rem;
-   height: 11rem;
-   margin-top: 1rem;
- }
- .sec4-img{
-   width: 6rem;
-   height: 6rem;
- }
- .sec4-title2{
-   font-size: 2rem;
- }
- .sec4-p1{
-   margin-top: 0.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.8rem;
- }
- .sec4-p2{
-   margin-top: 0.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.8rem;
- }
- .sec4-p3{
-   margin-top: 0.5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   font-size: 1.8rem;
- }
- }    
- 
- @media screen and (min-width: 1024px) and (max-width: 1149px){
-  .nav-bar{
-    margin-right: 1.6rem;
-  }
- .section4-box{
-  height: 70rem;
- }
- }
-
-
-
-/* FOOTER */
-
-/* :root {
-  --color-neutral-0: #fff;
-  --color-neutral-10: #fff;
-  --color-neutral-30: #a8a29e;
-  --color-neutral-40: #000;
-}
-
-
-* {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-} 
-
-footer {
-  width: 100%;
-  color: var(--color-neutral-40);
-  letter-spacing: 1px;
-}
-
-.footer-green-center {
-display: grid;
-align-items: center;
-justify-items: center;
-}
-
-.logo-footer {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-.logo-footer img {
-  width: 20%;
-} 
-
-.logo-footer h1 {
-  color: #40B121;
-  font-weight: 500;
-  font-size: 25px;
-  padding-top: 0.7em;
-}
-
-.footer-link {
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.footer-list li h3 {
-font-size: 1em;
-}
-
-#footer_content {
-  background-color: var(--color-neutral-10);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 3rem 3.5rem;
-}
-
-#footer_contacts h1 {
-  margin-bottom: 0.75rem;
-}
-
-#p-redes {
-  margin-top: 1em;
-  font-size: 1em;
-}
-
-#footer_social_media {
-  display: flex;
-  gap: 2rem;
-  margin-top: 0.5em;
-} 
-
-#footer_social_media .footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  color: var(--color-neutral-40);
-  border-radius: 50%;
-  transition: all 0.4s;
-}
-
-#footer_social_media .footer-link i {
-  font-size: 1.25rem;    
-}
-
-#footer_social_media .footer-link:hover {
-  opacity: 0.8;
-}
-
-#instagram {
-  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook {
-  background-color: #4267b3;
-}
-
-#whatsapp {
-  background-color: #25d366;
-}
-
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  list-style: none;
-}
-
-.footer-list .footer-link {
-  color: var(--color-neutral-30);
-  transition: all 0.4s;
-}
-
-.footer-list .footer-link:hover {
-  color: #40B121;
-}
-
-#footer_subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  font-size: 1em;
-}
-
-#footer_subscribe p {
-  color: var(--color-neutral-30);
-}
-
-#input_group {
-  display: flex;
-  align-items: center;
-  background-color: var(--color-neutral-0);
-  border-radius: 4px;
-  border: 1px solid #a8a29e;
-}
-
-#input_group input {
-  all: unset;
-  padding: 0.75rem;
-  width: 100%;
-}
-
-#input_group button {
-  background-color: #40B121;
-  border: none;
-  color: var(--color-neutral-40);
-  padding: 0px 1.25rem;
-  font-size: 1.125rem;
-  height: 100%;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-
-#input_group button:hover {
-  opacity: 0.8;
-}
-
-#footer_copyright {
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-neutral-0);
-  font-size: 0.8rem;
-  padding: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #40B121;
-}
-
-@media screen and (max-width: 768px) {
-  #footer_content {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  #footer_content {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 3rem 2rem;
-  }
-}
-
-@media screen and (min-width: 700px){
-
-#footer_social_media .footer-link i {
-  font-size: 3rem;    
-}
-
-.footer-list {
-  font-size: 2em;
-}
-
-.footer-list li h3 {
-  font-size: 1.4em;
-}
-
-#footer_subscribe {
-  font-size: 2em;
-}
-
-} */
