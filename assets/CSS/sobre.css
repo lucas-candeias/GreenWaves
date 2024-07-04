@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -19,468 +18,318 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .header {
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(90deg, #fff 35.5%, #40b121 51.5%);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #fff 35.5%, #40b121 51.5%);
 }
 
 .logo-type {
-  display: flex;
-  align-items: center;
-  margin-left: 22rem;
+    display: flex;
+    align-items: center;
+    margin-left: 22rem;
 }
 
 .logo-name{
-  font-size: 4rem;
-  color: #40b121;
+    font-size: 4rem;
+    color: #40b121;
 }
 
 .logo-icon{
-  width: 10rem;
-  height: 10rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .nav-link{
-  font-size: 2.2rem;
-  color: white;
-  font-weight: 500;
-  font-family: "Share Tech", sans-serif;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 500;
+    font-family: "Share Tech", sans-serif;
 }
 
 .nav-bar{
-  display: flex;
-  align-items: center;
-  gap: 9rem;
-  margin-right: 22rem;
-  
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    margin-right: 22rem;
+    
 }
 
 .nav ul li a {
-  position:relative;
-  z-index: 1;
-}
-.nav ul li a:hover {
-  color: #18A871;font-weight: 600;
-}
-.nav ul li a:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #ffffff;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-}
-.nav ul li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
+    position:relative;
+    z-index: 1;
+  }
+  .nav ul li a:hover {
+    color: #18A871;font-weight: 600;
+  }
+  .nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #ffffff;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  .nav ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
 
-.nav ul li a:after, .nav ul li a:before {
-  transition: all .5s;
-}
-
-/* MAIN */
-.hero {
-  padding-top: 11rem; /* Ajuste para o cabeçalho não sobrepor o conteúdo */
+  .nav ul li a:after, .nav ul li a:before {
+    transition: all .5s;
 }
 
 .main {
-  padding: 2rem;
+    display: flex;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-family: "Share Tech", sans-serif;
 }
 
-/* SECTION 1 */
-.section1 {
-  display: flex;
-  align-items: center;
-  padding: 6rem 2rem;
-  background-size: cover;
+.empresa {
+    margin-top: 15rem;
 }
 
-.imgSection1 {
-  width: 40%; /* Largura da imagem */
-  height: auto;
-  max-width: 500px; /* Tamanho máximo da imagem */
-  margin-right: 4rem; /* Espaço entre a imagem e o texto */
-  border-radius: 30px;
+.img-empresa {
+    width: 70rem;
+    height: 60rem;
+    border-radius: 10%;
 }
 
-.text-section1 {
- 
-      font-size: 5rem;
-      color: #40B121;
-      margin-bottom: 3rem;
-      
+.sobre-nos{
+    margin-top: 18rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+}
+
+.sobre-ns {
+    font-size: 5rem;
+    margin-left: 30rem;
+}
+
+.empresa-p {
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 2rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1%;
+    margin-right: 10%;
+    font-family: "Share Tech", sans-serif;
+    padding: 0rem 3rem 2rem 3rem;
+}
+
+.article-title {
+    margin-top: 7rem;
+    font-size: 7rem;
+    margin-right: 93rem;
+}
+
+.paineis-p {
+    font-size: 3rem;
+}
+
+.box {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    font-family: "Share Tech", sans-serif;
+  }
+
+
+  .box1 {
+    height: 50rem;
+    width: 55rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #40B121;
+  }
+
+  .box2 {
+    height: 50rem;
+    width: 55rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #40B121;
+  }
+
+  .box3 {
+    height: 50rem;
+    width: 55rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #40B121;
+  }
+
+  .icone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+
+  .img1 {
+    object-fit: cover;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 0.5rem;
+  }
+
+  .sec2-subtitle {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .sec2-pbox {
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 3rem;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-family: "Share Tech", sans-serif;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 1rem;
+  }
+
+  .section1-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  .section1-p {
+    font-size: 3rem;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .section2-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  .section2-p {
+    font-size: 3rem;
+  }
+
+  .terceira-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .section3-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  .section3-p {
+    font-size: 3rem;
+  }
+
+  .quarta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 4rem;
+    margin-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section4-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  .section4-p {
+    font-size: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+
+  .quinta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 4rem;
+    margin-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section5-title {
+    margin-top: 5rem;
+    font-size: 5rem;
+  }
+
+  .section5-p {
+    font-size: 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+
   
-}
-
-@media only screen and (max-width: 768px) {
-  /* Estilos para telas menores que 768px */
-
-  .header {
-      height: 8rem;
-  }
-
-  .nomeGreenwaves {
-      font-size: 3rem;
-  }
-
-  .logoGreenwaves {
-      width: 6rem;
-      height: auto;
-  }
-
-  .nav {
-      display: none; /* Esconder o menu ao usar um ícone de menu para dispositivos móveis */
-  }
-
-  .navBar {
-      margin-right: 1rem; /* Reduzir o espaçamento entre os itens do menu */
-  }
-
-  .aNav {
-      padding: 1rem;
-  }
-
-  .section1,
-  .section2,
-  .section3 {
-      padding: 4rem 1rem;
-  }
-
-  .section1 {
-      flex-direction: column; /* Coloca a imagem acima do texto em telas menores */
-  }
-
-  .imgSection1 {
-      width: 100%;
-      margin-right: 0; /* Remove o espaçamento lateral da imagem em telas menores */
-      margin-bottom: 2rem; /* Espaçamento entre imagem e texto */
-  }
-
-  .text-section1 {
-      font-size: 2.5rem;
-  }
-}
-
-/* SECTION 2 e SECTION 3 */
-.section2,
-.section3 {
-  padding: 6rem 2rem;
-  text-align: center;
-}
-
-.title1 {
-  font-size: 4.5rem;
-  color: #40B121;
-  margin-bottom: 3rem;
-
-}
-
-.title,
-p {
-  font-size: 2rem;
-  color: #000;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.caixas {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.caixa1,
-.caixa2,
-.caixa3 {
-  width: calc(33.33% - 2rem); /* Cada caixa ocupa cerca de 33.33% do espaço com margens */
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  box-shadow: 0px 4px 4px rgba(0, 117, 126, 0.2);
-  text-align: center;
-}
-
-.caixa1:hover,
-.caixa2:hover,
-.caixa3:hover {
-  background: rgba(64, 177, 33, 0.3);
-}
-
-.img-box1 {
-  width: 20rem;
-  height: auto;
-  margin-bottom: 1.5rem;
-}
-
-.title-box1,
-.title-box2,
-.title-box3 {
-  font-size: 5rem;
-  color: #40B121;
-  margin-bottom: 1rem;
-}
-
-.p-box1 {
-  font-size: 2.8rem;
-  line-height: 1.4;
-  color: #000;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Estilos para telas menores que 768px */
-
-  .header {
-      height: 8rem;
-  }
-
-  .nomeGreenwaves {
-      font-size: 2rem;
-  }
-
-  .logoGreenwaves {
-      width: 6rem;
-      height: auto;
-  }
-
-  .nav {
-      display: none; /* Esconder o menu ao usar um ícone de menu para dispositivos móveis */
-  }
-
-  .navBar {
-      margin-right: 1rem; /* Reduzir o espaçamento entre os itens do menu */
-  }
-
-  .aNav {
-      padding: 1rem;
-  }
-
-  .section1,
-  .section2,
-  .section3 {
-      padding: 4rem 1rem;
-  }
-
-  .section1 {
-      font-size: 2rem;
-  }
-
-  .title1 {
-      font-size: 2.5rem;
-  }
-
-  .title,
-  p {
-      font-size: 1.6rem;
-  }
-
-  .caixas {
-      flex-direction: column;
-      gap: 2rem;
-  }
-
-  .caixa1,
-  .caixa2,
-  .caixa3 {
-      width: 100%;
-      max-width: 100%;
-  }
-
-  .img-box1 {
-      width: 8rem;
-  }
-
-  .title-box1,
-  .title-box2,
-  .title-box3 {
-      font-size: 2rem;
-  }
-
-  .p-box1 {
-      font-size: 1.4rem;
-  }
-}
-.paragrafo1{
-  margin-right: 7px;
-  margin-left: 10px;
-  margin-top: 70px;
-  font-size: 2.5rem;
-}
-
-:root {
---color-neutral-0: #fff;
---color-neutral-10: #fff;
---color-neutral-30: #a8a29e;
---color-neutral-40: #000;
-}
-
-/* Base styles */
-footer {
-width: 100%;
-color: var(--color-neutral-40);
-letter-spacing: 1px;
-}
-
-.logo-footer {
-display: flex;
-align-items: center;
-justify-items: end;
-}
-
-.logo-footer img {
-width: 20%;
-} 
-
-.logo-footer h1 {
-color: #40B121;
-font-weight: 500;
-font-size: 3rem;
-padding-top: 0.7em;
-}
-
-.footer-link {
-text-decoration: none;
-font-size: 1.6rem;
-}
-
-#footer_content {
-background-color: var(--color-neutral-10);
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-padding: 3rem 3.5rem;
-font-size: 1.6rem;
-}
-
-#footer_contacts h1 {
-margin-bottom: 0.75rem;
-}
-
-#p-redes {
-padding-left: 1em;
-font-size: 1.8rem;
-}
-
-#footer_social_media {
-display: flex;
-gap: 2rem;
-padding: 1em;
-} 
-
-#footer_social_media .footer-link {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 4rem;
-width: 4rem;
-color: var(--color-neutral-40);
-border-radius: 50%;
-transition: all 0.4s;
-}
-
-#footer_social_media .footer-link i {
-font-size: 1.25rem;    
-
-}
-
-#footer_social_media .footer-link:hover {
-opacity: 0.8;
-}
-
-#instagram {
-background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook {
-background-color: #4267b3;
-}
-
-#whatsapp {
-background-color: #25d366;
-}
-
-.footer-list {
-display: flex;
-flex-direction: column;
-gap: 0.75rem;
-list-style: none;
-font-size: 1.8rem;
-}
-
-.footer-list .footer-link {
-color: var(--color-neutral-30);
-transition: all 0.4s;
-}
-
-.footer-list .footer-link:hover {
-color: #40B121;
-}
-
-#footer_subscribe {
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
-}
-
-#footer_subscribe p {
-color: var(--color-neutral-30);
-}
-
-#input_group {
-display: flex;
-align-items: center;
-background-color: var(--color-neutral-0);
-border-radius: 4px;
-border: 1px solid #a8a29e;
-}
-
-#input_group input {
-all: unset;
-padding: 0.75rem;
-width: 100%;
-}
-
-#input_group button {
-background-color: #40B121;
-border: none;
-color: var(--color-neutral-40);
-padding: 0px 1.25rem;
-font-size: 2rem;
-height: 100%;
-border-radius: 0px 4px 4px 0px;
-cursor: pointer;
-transition: all 0.4s;
-}
-
-#input_group button:hover {
-opacity: 0.8;
-}
-
-#footer_copyright {
-display: flex;
-justify-content: center;
-background-color: var(--color-neutral-0);
-font-size: 2rem;
-padding: 1.5rem;
-font-weight: 400;
-text-align: center;
-color: #000000;
-} }
