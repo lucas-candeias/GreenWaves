@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
+}
+
+a{
+  color: white;
 }
 
 
@@ -703,6 +708,18 @@ html {
    }
    .sec2-pbox{
      font-size: 2.2rem;
+   }
+
+   .btn-sec4, .btnc-a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+   }
+
+   .btn-a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
    }
  
  
