@@ -13,24 +13,66 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
-    <div class="container">
-        <header class="header">
-            <div class="logo-type">
-                <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
-                <i class="logo-name">GREENWAVES</i>
-            </div>
-
-            <nav class="nav">
-                <ul class="nav-bar">
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
-                    <li><a href="#serviços" class="nav-link">Nossos Serviços</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
-                </ul>
+    <div class="header-mobile">
+        <header id="header-m">
+            <nav class="nav-bar-m">
+                <div class="logo">
+                    <img class="img-logo-m" src="./assets/img/logo.png" alt="logo">
+                    <h1>GREENWAVES</h1>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg"
+                            alt="menu mobile"></button>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Nossos Serviços</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link-m">Sobre nós</a></li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link-m">Equipe</a></li> -->
+                    </ul>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+    
+    
             </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link-m">Início</a></li>
+                    <li class="nav-item"><a href="#serviços" class="nav-link-m">Nossos Serviços</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link-m">Sobre nós</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link-m">Equipe</a></li> -->
+                    <li class="nav-item"><a href="./contato.html" class="nav-link-m">Contato</a></li>
+                </ul>
+    
+                <div class="login-button">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </div>
         </header>
+    </div>
+    <div class="container">
+        
+        <div class="header-pc1">
+            <header class="header">
+                <div class="logo-type">
+                    <img class="logo-icon" src="assets/IMG/Logo-greenwaves.png" alt="Greenwaves">
+                    <i class="logo-name">GREENWAVES</i>
+                </div>
+    
+                <nav class="nav">
+                    <ul class="nav-bar">
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+                        <li><a href="#serviços" class="nav-link">Nossos Serviços</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
         <!-- MAIN -->
         <div class="hero">
@@ -244,15 +286,16 @@
     </main>
     </div>
 
-    <!-- RODAPÉ -->
     <footer>
         <div id="footer_content">
 
             <div id="footer_contacts">
 
-                <div class="logo-footer">
-                    <img class="img-logo" src="./assets/img/Logo-greenwaves.png" alt="logo">
-                    <h1>GREENWAVES</h1>
+                <div class="footer-green-center">
+                    <div class="logo-footer">
+                        <img class="img-logo" src="./assets/img/logo.png" alt="logo">
+                        <h1>GREENWAVES</h1>
+                    </div>
                 </div>
 
                 <p id="p-redes">Nos siga nas redes:</p>
@@ -343,7 +386,8 @@
 
 
     </div>
-    <script src="assets/JS/main.js" defer></script>
+    <script src="./assets/JS/script.js"></script>
+    <script src="assets/JS/main.js"></script>
 </body>
 
 </html>
